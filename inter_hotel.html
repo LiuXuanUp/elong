@@ -1,0 +1,709 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>国际酒店</title>
+<link rel="stylesheet" href="css/inter_hotel_css.css">
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/inter_hotel_js.js"></script>
+
+<link rel="stylesheet" href="jquery-ui-master/themes/base/jquery.ui.all.css">
+	<script src="jquery-ui-master/jquery-1.10.2.js"></script>
+	<script src="jquery-ui-master/ui/jquery.ui.core.js"></script>
+	<script src="jquery-ui-master/ui/jquery.ui.widget.js"></script>
+	<script src="jquery-ui-master/ui/jquery.ui.datepicker.js"></script>
+	<link rel="stylesheet" href="jquery-ui-master/demos/demos.css">
+	
+</head>
+
+<body>
+<header>
+  <div class="head">
+    <h1><a href="index.html"></a></h1>
+    <ul class="head-nav">
+      <li><a href="">积分广场</a></li>
+      <li><a href="">礼品卡</a></li>
+      <li class="head-nav-li3"><a href="">微信客服</a>
+        <div></div>
+        <span><img src="images/ss001.png" alt=""></span></li>
+      <li><a href="">帮助中心</a></li>
+      <li><a href="">English</a><span></span>
+        <ul class="head-nav-ul">
+          <ol>
+            <a href="">简体版</a>
+          </ol>
+          <ol>
+            <a href="">繁体版</a>
+          </ol>
+        </ul>
+      </li>
+    </ul>
+    <div class="head-shouji"><a href="">手机版<br />
+      <div></div>
+      <p></p>
+      专享五折酒店</a></div>
+    <div class="head-phone">7×24客服电话<strong>4009-333-333
+      <p></p>
+      <ul class="head-phone-ul">
+        <li><a href="">国内：4009-333-333</a></li>
+        <li class="head-phone-ul-li2"><a href="">香港：852-8131-8883<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;852-8131-8983</a></li>
+        <li><a href="">台湾：886-2-7717-8123</a></li>
+        <li><a href="">海外：86-10-6432-9999</a></li>
+      </ul>
+      </strong> </div>
+  </div>
+</header>
+<nav>
+  <div class="nav-div">
+    <ul class="nav-firstul" id="nav_firstul">
+      <li id="current"><a href="index.html">首页</a></li>
+      <li><a href="domestic-hotel.html">国内酒店</a></li>
+      <li><a href="tuan.html">团购</a></li>
+      <li class="nav-firstul-fourthli"><a href="inter_hotel.html">国际酒店</a>
+        <div></div>
+      </li>
+      <li class="nav-firstul-fifthli"><a href="ShortTermApartment.html">短租公寓</a>
+        <div></div>
+      </li>
+      <li><a href="flashsale.html">限时抢</a></li>
+      <li><a href="planet.html">机票</a></li>
+      <li class="nav-firstul-eighthli"><a href="train-ticket.html">火车票</a>
+        <div></div>
+      </li>
+      <li><a href="cart.html">汽车票</a></li>
+      <li><a href="index1.html">旅游指南</a></li>
+    </ul>
+    <ul class="nav-secondul" id="nav-secondul">
+      <li class="nav-secondul-li"><a href="">登录</a></li>
+      <li><a href="">注册</a></li>
+    </ul>
+  </div>
+  <div id="loginoption">
+    <div id="orangelogin"><a href="">登录</a></div>
+    <ul>
+      <li id="login_li1"><a href="">酒店订单</a></li>
+      <li id="login_li2"><a href="">团购订单</a></li>
+      <li id="login_li3"><a href="">机票订单</a></li>
+      <li id="login_li4"><a href="">火车票订单</a></li>
+      <li id="login_li5"><a href="">现金账户</a></li>
+      <li id="login_li6"><a href="">汽车票订单</a></li>
+      <li id="login_li7"><a href="">酒店收藏</a></li>
+      <li id="login_li8"><a href="">我的点评</a></li>
+      <li id="login_li9"><a href="">个人设置</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<section class="inter_banner1" id="inter_banner1">
+  <div class="inter_all">
+    <div class="inter_sec_div1">
+      <input type="text" id="citytxt" class="citytxt" maxlength="50" value="首尔" onfocus="javascript:this.select()" onFocus="this.select()" onMouseUp="this.select()">
+    </div>
+    <div class="inter_sec_div2"> <span class="inter_Time">入住</span>
+      <input type="text" id="checkindate" class="checkinDate" value="2015-8-31" onFocus="this.select()" onMouseUp="this.select()">
+      <span class="inter_Time">离店</span>
+      <input type="text" id="checkoutdate" class="checkinDate" value="2015-9-1" onFocus="this.select()" onMouseUp="this.select()">
+    </div>
+    <div class="inter_sec_div3">
+      <input type="text" id="inter_txt" class="citytxt" maxlength="50" value="商圈/地标/景点/酒店名" onFocus="this.select()" onMouseUp="this.select()">
+    </div>
+    <div class="inter_sec_div4">
+      <button id="inter_search" class="inter_search"> <span></span>搜索 </button>
+    </div>
+  </div>
+  <div class="inside_city" id="inside_city">
+    <p class="box_p1">可搜索59,922个国际城市</p>
+    <ul class="box_ul1" id="box_ul1">
+      <li class="box_ul1_li1 box_ul1_current"><a href="">热门</a></li>
+      <li class="box_ul1_li2"><a href="">亚洲</a></li>
+      <li class="box_ul1_li3"><a href="">美洲</a></li>
+      <li class="box_ul1_li4"><a href="">欧洲</a></li>
+      <li class="box_ul1_li5"><a href="">大洋洲</a></li>
+      <li class="box_ul1_li6"><a href="">非洲</a></li>
+    </ul>
+    <div class="box_div1">
+      <ul>
+        <li><a href="">首尔</a></li>
+        <li><a href="">普吉岛</a></li>
+        <li><a href="">拉斯维加斯</a></li>
+        <li><a href="">香港</a></li>
+        <li><a href="">伦敦</a></li>
+      </ul>
+      <ul>
+        <li><a href="">曼谷</a></li>
+        <li><a href="">清迈</a></li>
+        <li><a href="">纽约</a></li>
+        <li><a href="">苏梅岛</a></li>
+        <li><a href="">巴沙</a></li>
+      </ul>
+      <ul>
+        <li><a href="">台北</a></li>
+        <li><a href="">巴厘岛</a></li>
+        <li><a href="">芭提雅</a></li>
+        <li><a href="">大阪</a></li>
+        <li><a href="">长滩岛</a></li>
+      </ul>
+      <ul>
+        <li><a href="">新加坡</a></li>
+        <li><a href="">东京</a></li>
+        <li><a href="">吉隆坡</a></li>
+        <li><a href="">洛杉矶</a></li>
+        <li><a href="">巴黎</a></li>
+      </ul>
+    </div>
+    <div class="box_div2">
+      <ul>
+        <li><a href="">首尔</a></li>
+        <li><a href="">普吉岛</a></li>
+        <li><a href="">兰卡威</a></li>
+        <li><a href="">济州岛</a></li>
+        <li><a href="">暹粒</a></li>
+      </ul>
+      <ul>
+        <li><a href="">曼谷</a></li>
+        <li><a href="">清迈</a></li>
+        <li><a href="">吉隆坡</a></li>
+        <li><a href="">马尔代夫</a></li>
+        <li><a href="">皮皮岛</a></li>
+      </ul>
+      <ul>
+        <li><a href="">台北</a></li>
+        <li><a href="">巴厘岛</a></li>
+        <li><a href="">香港</a></li>
+        <li><a href="">胡志明市</a></li>
+        <li><a href="">迪拜</a></li>
+      </ul>
+      <ul>
+        <li><a href="">新加坡</a></li>
+        <li><a href="">东京</a></li>
+        <li><a href="">高雄</a></li>
+        <li><a href="">釜山</a></li>
+        <li><a href="">塞班岛</a></li>
+      </ul>
+    </div>
+    <div class="box_div3">
+      <ul>
+        <li><a href="">拉斯维加斯</a></li>
+        <li><a href="">旧金山</a></li>
+        <li><a href="">华盛顿</a></li>
+        <li><a href="">波士顿</a></li>
+        <li><a href="">墨西哥城</a></li>
+      </ul>
+      <ul>
+        <li><a href="">纽约</a></li>
+        <li><a href="">圣地亚哥</a></li>
+        <li><a href="">温哥华</a></li>
+        <li><a href="">圣保罗</a></li>
+        <li><a href="">塞班岛</a></li>
+      </ul>
+      <ul>
+        <li><a href="">洛杉矶</a></li>
+        <li><a href="">西雅图</a></li>
+        <li><a href="">多伦多</a></li>
+        <li><a href="">里约热内卢</a></li>
+        <li><a href="">蒙特利尔</a></li>
+      </ul>
+      <ul>
+        <li><a href="">夏威夷</a></li>
+        <li><a href="">芝加哥</a></li>
+        <li><a href="">奥兰多</a></li>
+        <li><a href="">布宜诺斯艾利斯</a></li>
+        <li><a href="">圣保罗</a></li>
+      </ul>
+    </div>
+    <div class="box_div4">
+      <ul>
+        <li><a href="">伦敦</a></li>
+        <li><a href="">罗马</a></li>
+        <li><a href="">佛罗伦萨</a></li>
+        <li><a href="">布拉格</a></li>
+        <li><a href="">尼斯</a></li>
+      </ul>
+      <ul>
+        <li><a href="">巴黎</a></li>
+        <li><a href="">法兰克福</a></li>
+        <li><a href="">阿姆斯特丹</a></li>
+        <li><a href="">维也纳</a></li>
+        <li><a href="">里昂</a></li>
+      </ul>
+      <ul>
+        <li><a href="">米兰</a></li>
+        <li><a href="">慕尼黑</a></li>
+        <li><a href="">马德里</a></li>
+        <li><a href="">圣彼得堡</a></li>
+        <li><a href="">马赛</a></li>
+      </ul>
+      <ul>
+        <li><a href="">莫斯科</a></li>
+        <li><a href="">巴塞罗那</a></li>
+        <li><a href="">伊斯坦布尔</a></li>
+        <li><a href="">威尼斯</a></li>
+        <li><a href="">普罗旺斯</a></li>
+      </ul>
+    </div>
+    <div class="box_div5">
+      <ul>
+        <li><a href="">悉尼</a></li>
+        <li><a href="">堪培拉</a></li>
+        <li><a href="">凯恩斯</a></li>
+        <li><a href="">基督城</a></li>
+      </ul>
+      <ul>
+        <li><a href="">墨尔本</a></li>
+        <li><a href="">斐济</a></li>
+        <li><a href="">布里斯班</a></li>
+        <li><a href="">帕劳</a></li>
+      </ul>
+      <ul>
+        <li><a href="">奥克兰</a></li>
+        <li><a href="">惠灵顿</a></li>
+        <li><a href="">黄金海岸</a></li>
+        <li><a href="">关岛</a></li>
+      </ul>
+      <ul>
+        <li><a href="">布里斯班</a></li>
+        <li><a href="">帕斯</a></li>
+        <li><a href="">皇后镇</a></li>
+      </ul>
+    </div>
+    <div class="box_div6">
+      <ul>
+        <li><a href="">开罗</a></li>
+        <li><a href="">塞舌尔</a></li>
+        <li><a href="">突尼斯</a></li>
+      </ul>
+      <ul>
+        <li><a href="">毛里求斯</a></li>
+        <li><a href="">比勒陀利亚</a></li>
+      </ul>
+      <ul>
+        <li><a href="">约翰内斯堡</a></li>
+        <li><a href="">内罗毕</a></li>
+      </ul>
+      <ul>
+        <li><a href="">开普敦</a></li>
+        <li><a href="">班德</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="inside_spots" id="inside_spots">
+    <dl>
+      <dt> <span class="spots_span1"></span> 机场车站 </dt>
+      <dd>
+        <ul>
+          <li><a href="">首尔，金浦国际机场</a></li>
+          <li><a href="">幸信站</a></li>
+         <!-- <li><a href="">台北车站</a></li>-->
+        </ul>
+      </dd>
+    </dl>
+    <dl>
+      <dt> <span class="spots_span2"></span> 热门位置 </dt>
+      <dd>
+        <ul>
+          <li><a href="">昌德宫</a></li>
+          <li><a href="">昌庆宫</a></li>
+          <li><a href="">李舜臣纪念碑</a></li>
+          <li><a href="">韩国之家</a></li>
+          <li><a href="">N首尔塔</a></li>
+          <li><a href="">德寿宫</a></li>
+          <li><a href="">景福宫</a></li>
+          <li><a href="">庆熙宫</a></li>
+          <li><a href="">崇礼门</a></li>
+          <li><a href="">曹溪寺</a></li>
+          <li><a href="">奉恩寺</a></li>
+          <li><a href="">三星大厦广场</a></li>
+          <li><a href="">宗庙</a></li>
+          <li><a href="">东大门城门</a></li>
+          <li><a href="">明洞天主圣堂</a></li>
+        </ul>
+      </dd>
+    </dl>
+    <dl>
+      <dt> <span class="spots_span3"></span> 热门品牌 </dt>
+      <dd>
+        <ul>
+          <li><a href="">悦榕庄</a></li>
+          <li><a href="">喜达屋</a></li>
+          <li><a href="">W酒店</a></li>
+          <li><a href="">铂尔曼</a></li>
+          <li><a href="">喜来登</a></li>
+          <li><a href="">威斯汀</a></li>
+          <li><a href="">美居</a></li>
+          <li><a href="">凯悦</a></li>
+          <li><a href="">万丽</a></li>
+          <li><a href="">希尔顿</a></li>
+          <li><a href="">万豪</a></li>
+          <li><a href="">雅乐轩</a></li>
+          <li><a href="">最佳西方</a></li>
+          <li><a href="">万怡</a></li>
+          <li><a href="">洲际</a></li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+  <div class="showsearch_before" id="showsearch_before"> <a class="downdirecta" href=""></a> </div>
+</section>
+<div class="yoursearch_browse" id="yoursearch_browse">
+  <div class="yoursearch"> <span>您搜索过</span>
+    <ul>
+      <li><a href=""><img src="images/36.jpg" style="width:65px; height:65px;">
+        <div>首尔（及其他周边地<br>
+          <span>906</span>家酒店</div>
+        </a></li>
+      <li></li>
+      <li class="yoursearch_browse_li"></li>
+    </ul>
+  </div>
+  <div class="yoursearch yourbrowse "> <span>您浏览过</span>
+    <ul>
+      <li><a href=""><img src="images/36.jpg" style="width:65px; height:65px;">
+        <div>首尔（及其他周边地<br>
+          <span>906</span>家酒店</div>
+        </a></li>
+      <li></li>
+      <li class="yoursearch_browse_li"></li>
+    </ul>
+  </div>
+</div>
+<section class="inter_banner2" id="inter_banner2">
+  <div class="banner_ads" id="banner_ads">
+    <div class="box_for_a"> <a></a> <a></a> <a></a> <a></a> <a></a> </div>
+  </div>
+</section>
+<section class="inter_hot_spots" id="inter_hot_spots">
+  <div class="hotspots_div1">
+    <p class="hotspots_p1">热门旅游目的地</p>
+    <p class="hotspots_p2">大家推荐的好去处</p>
+  </div>
+  <div class="hotspots_div2">
+    <ul>
+      <li><a href="" class="hotspots_a1">
+        <div> <span>首尔</span> 906家酒店 </div>
+        <div class="hotspots_describe"> <span>78%</span> 的人想去
+          <p>一座古典与现代相融的城市，到处呈现出令人心动的景象。</p>
+        </div>
+        </a></li>
+      <li><a href="" class="hotspots_a2">
+        <div> <span>曼谷</span> 1025家酒店 </div>
+        <div class="hotspots_describe"> <span>76%</span> 的人想去
+          <p>在岁月的流逝中，曼谷依然是游人们心目中向往的“旅游天堂”。</p>
+        </div>
+        </a></li>
+      <li class="hotspots_div2_li1"><a href="" class="hotspots_a3">
+        <div> <span>拉斯维加斯</span> 249家酒店 </div>
+        <div class="hotspots_describe"> <span>68%</span> 的人想去
+          <p>一天的时间让你发现全世界。</p>
+        </div>
+        </a></li>
+      <li><a href="" class="hotspots_a4">
+        <div> <span>纽约</span> 812家酒店 </div>
+        <div class="hotspots_describe"> <span>58%</span> 的人想去
+          <p>如果你爱他，请带他去纽约，因为那是天堂。</p>
+        </div>
+        </a></li>
+      <li><a href="" class="hotspots_a5">
+        <div> <span>东京</span> 589家酒店 </div>
+        <div class="hotspots_describe"> <span>60%</span> 的人想去
+          <p>充满活力和时代感的城市，购物天堂，美食之都。</p>
+        </div>
+        </a></li>
+      <li class="hotspots_div2_li1"><a class="hotspots_a6" href="">
+        <div> <span>新加坡</span> 451家酒店 </div>
+        <div class="hotspots_describe"> <span>36%</span> 的人想去
+          <p>这里花香草绿，空气清新，是一个小巧美丽的花园都市。</p>
+        </div>
+        </a class="hotspots_a1"></li>
+    </ul>
+  </div>
+</section>
+<section class="inter_vacation" id="inter_vacation">
+  <div class="vacation_div1" id="vacation_div1"> <span>度假主题</span>
+    <ul>
+      <li><a class="vacation_a1 vacation_currenta" id="vacation_a1" href="#"><small id="vacation_small"></small></a> <span>面朝大海</span> </li>
+      <li><a class="vacation_a2" id="vacation_a2" href="#"><small></small></a> <span>文艺清新</span> </li>
+      <li><a class="vacation_a3" id="vacation_a3" href="#"><small></small></a> <span>吃货必去</span> </li>
+      <li><a class="vacation_a4" id="vacation_a4" href="#"><small></small></a> <span>建筑风格</span> </li>
+      <li><a class="vacation_a5" id="vacation_a5" href="#"><small></small></a> <span>购物血拼</span> </li>
+    </ul>
+  </div>
+  <div id="vacation_divbox" class="vacation_divbox">
+  <div class="vacation_div2" id="vacation_div2">
+    <div class="vacation_saipan"> <a href=""> <img src="images/041.jpg" style="width:385px; height:260px">
+      <p>塞班岛</p>
+      <span></span>
+      <div>塞班岛就是一个风情万种的佳人，玻璃般的海水，妩媚动人的密克罗尼西亚女郎与土风舞，以及浪漫而令人兴奋的沙滩烧烤派对。</div>
+      </a> </div>
+    <div class="vacation_phuket_bali">
+      <div class="vacation_phuket"> <a href=""> <img src="images/043.jpg">
+        <p><span>普吉岛：</span>安达曼海上的一颗明珠。</p>
+        </a> </div>
+      <div class="vacation_bali"> <a href=""> <img src="images/042.jpg">
+        <p><span>巴厘岛：</span>天堂般的迷人景色让人沉醉其中。</p>
+        </a> </div>
+    </div>
+    <div class="vacation_sumei_hawaii">
+      <div class="vacation_sumei"> <a href=""> <img src="images/044.jpg">
+        <p><span>苏梅岛：</span>安宁清幽，蜜月胜地。</p>
+        </a> </div>
+      <div class="vacation_hawaii"> <a href=""> <img src="images/045.jpg">
+        <p><span>夏威夷：</span>凝聚着东方妩媚和西方性感。</p>
+        </a> </div>
+    </div>
+  </div>
+  <div class="vacation_div3" id="vacation_div3">
+    <div class="vacation_prague"> <a href=""> <img src="images/061.jpg" style="width:385px; height:260px">
+      <p>布拉格</p>
+      <span></span>
+      <div>漫步在童话般的小路，无法遇见昆德拉，但心里却总是依稀萦绕着昆德拉所编织的布拉格之梦。那诉说着千年沧桑的石板路引领你步入小巷幽深处，典雅、古朴，一派清净。</div>
+      </a> </div>
+    <div class="vacation_chiengmai_vienna">
+      <div class="vacation_chiengmai"> <a href=""> <img src="images/063.jpg">
+        <p><span>清迈：</span>泰北玫瑰，恬静小镇。</p>
+        </a> </div>
+      <div class="vacation_vienna"> <a href=""> <img src="images/064.jpg">
+        <p><span>维也纳：</span>音乐之都，多瑙河的女神。</p>
+        </a> </div>
+    </div>
+    <div class="vacation_queen_seattle">
+      <div class="vacation_queen"> <a href=""> <img src="images/062.jpg">
+        <p><span>皇后镇：</span>山清水秀，享受阳光的理想之地。</p>
+        </a> </div>
+      <div class="vacation_seattle"> <a href=""> <img src="images/065.jpg">
+        <p><span>西雅图：</span>安静的存在，等待着被人发现。</p>
+        </a> </div>
+    </div>
+  </div>
+  <div class="vacation_div4" id="vacation_div4">
+    <div class="vacation_mexico"> <a href=""> <img src="images/011.jpg" style="width:385px; height:260px">
+      <p>墨西哥</p>
+      <span></span>
+      <div>不管去哪里旅游，目的地的美食都是不能错过的。黑面包看似其貌不扬却极富营养，鱼子酱是不可多得的健康美食。</div>
+      </a> </div>
+    <div class="vacation_tokyo_paris">
+      <div class="vacation_tokyo"> <a href=""> <img src="images/013.jpg">
+        <p><span>京都：</span>正宗日料，独具风味。</p>
+        </a> </div>
+      <div class="vacation_paris"> <a href=""> <img src="images/012.jpg">
+        <p><span>巴黎：</span>闻名世界的法国料理，风靡食客的。</p>
+        </a> </div>
+    </div>
+    <div class="vacation_quebec_istanbul">
+      <div class="vacation_quebec"> <a href=""> <img src="images/014.jpg">
+        <p><span>魁北克：</span>汇集世界各地的美食。</p>
+        </a> </div>
+      <div class="vacation_istanbul"> <a href=""> <img src="images/015.jpg">
+        <p><span>伊斯坦布尔：</span>土耳其料理是一般佳肴无法媲美的。</p>
+        </a> </div>
+    </div>
+  </div>
+  <div class="vacation_div5" id="vacation_div5">
+    <div class="vacation_milan"> <a href=""> <img src="images/031.jpg" style="width:385px; height:260px">
+      <p>米兰</p>
+      <span></span>
+      <div>米兰大教堂的云纹大理石墙面和直入云端的尖顶让它从灰蒙蒙的杂乱街景中脱颖而出，乍看之下，仿若来自天外，你会情不自禁屏住呼吸，发出敬畏的赞叹。</div>
+      </a> </div>
+    <div class="vacation_sydney_barcelona">
+      <div class="vacation_sydney"> <a href=""> <img src="images/034.jpg">
+        <p><span>悉尼：</span>现代建筑与自然和谐共生。</p>
+        </a> </div>
+      <div class="vacation_barcelona"> <a href=""> <img src="images/032.jpg">
+        <p><span>巴塞罗那：</span>高迪的建筑是世界绝无仅有的奇迹。</p>
+        </a> </div>
+    </div>
+    <div class="vacation_athens_peterburg">
+      <div class="vacation_athens"> <a href=""> <img src="images/035.jpg">
+        <p><span>雅典：</span>感受雅典娜的神韵，必定终身难忘。</p>
+        </a> </div>
+      <div class="vacation_peterburg"> <a href=""> <img src="images/033.jpg">
+        <p><span>圣彼得堡：</span>彼得大帝用梦想建造的杰作。</p>
+        </a> </div>
+    </div>
+  </div>
+  <div class="vacation_div6" id="vacation_div6">
+     <div class="vacation_lasvegas">
+       <a href="">
+         
+         <img src="images/021.jpg" style="width:385px; height:260px">
+         <p>拉斯维加斯</p>
+         <span></span>
+         <div>拉斯维加斯是购物的天堂，从价廉物美的小商品到世界顶级名牌时装，各种商品一应俱全，在这里你可以找到想要的一切。</div>
+       </a>
+     </div>
+     <div class="vacation_seoul_losangeles">
+       <div class="vacation_seoul">
+         <a href="">
+           <img src="images/025.jpg">
+           <p><span>首尔：</span>多样的购物场所可以满足各种需求。</p>
+         </a>
+       </div>
+       <div class="vacation_losangeles">
+         <a href="">
+           <img src="images/024.jpg">
+           <p><span>洛杉矶：</span>购物时在洛杉矶最棒的活动之一。</p>
+         </a>
+       </div>
+     </div> 
+     <div class="vacation_paris_tokyo">
+       <div class="vacation_paris">
+         <a href="">
+           <img src="images/022.jpg">
+           <p><span>巴黎：</span>在巴黎购物 是一种优雅的疯狂。</p>
+         </a>
+       </div>
+       <div class="vacation_tokyo">
+         <a href="">
+           <img src="images/023.jpg">
+           <p><span>东京：</span>世界有名的购物热点。</p>
+         </a>
+       </div>
+     </div>
+</section>
+<section class="inter_searchhotel">
+  <div class="searchhotel_div1">
+    <p>搜索酒店</p>
+    世界那么大 总会发现你心中的家
+  </div>
+  <div class="searchhotel_div2">
+    <ul>
+      <li><a class="hotel_div2_a1" href="">
+        
+        <strong></strong>
+        <div class="div2_a1_div1">海岛酒店</div>
+        <div class="div2_a1_div2">
+          <span></span>
+          <small></small>
+          <div>碧蓝的大海前，温暖的阳光下，带着孩子尽情戏水，带着妻子沙滩漫步，带着父母悠然放松，这些海岛圆你一切的美梦。</div>
+        </div>
+      </a></li>
+      <li><a class="hotel_div2_a2" href="">
+        
+        <strong></strong>
+        <div class="div2_a1_div1">海外温泉</div>
+        <div class="div2_a1_div2">
+          <span></span>
+          <small></small>
+          <div>不一样的泉水，不一样的滋养，小艺走遍世界，精心挑选历史悠久的温泉，在这万物复苏的季节，赐予你无穷的朝气。</div>
+        </div>
+      </a></li>
+      <li><a class="hotel_div2_a3" href="">
+        
+        <strong></strong>
+        <div class="div2_a1_div1">银幕之旅</div>
+        <div class="div2_a1_div2">
+          <span></span>
+          <small></small>
+          <div>羡慕跑男在首尔玩耍，向往泰囧里的可爱国度，又好奇花样姐姐走过的城市，这一次，让小艺带你亲自去体验。</div>
+        </div>
+      </a></li>
+    </ul>
+  </div>
+</section>
+<section class="inter_adver">
+  <div>
+    <a href=""></a>
+  </div>
+</section>
+<section class="inter_shake" id="inter_shake">
+  <div class="shake_div1">
+    <a href="">
+      <span class="needrotate"></span>
+      <p>更多酒店</p>
+    </a>
+    <p class="shake_p1">可预订全球500万家酒店<br>覆盖200多个国家和地区</p>
+  </div>
+  <div class="shake_div2">
+    <a href="">
+      <span class="needrotate"></span>
+      <p>超值优惠</p>
+    </a>
+    <p class="shake_p1">不受预订费<br>覆盖200多个国家和地区</p>
+  </div>
+  <div class="shake_div3">
+    <a href="">
+      <span class="needrotate"></span>
+      <p>值得信赖</p>
+    </a>
+    <p class="shake_p1">纳斯达克上市<br>支付安全可靠</p>
+  </div>
+</section>
+
+
+<footer>
+  <div class="foot">
+    <ul class="foot-ul">
+      <li>
+      <h2>加盟合作</h2>
+      <ul>
+        <ol>
+        <a href="">酒店加盟</a>
+        </ol>
+ 		       <ol>
+        <a href="">分销联盟</a>
+        </ol>
+        <ol>
+        <a href="">代理合作</a>
+        </ol>
+   	     <ol>
+        <a href="">广告服务</a>
+        </ol>
+      </ul>
+      </li>
+      <li>
+      <h2>关于艺龙</h2>
+      <ul>
+        <ol>
+        <a href="">关于艺龙</a>
+        </ol>
+        <ol>
+        <a href="">酒店大全</a>
+        </ol>
+        <ol>
+        <a href="">招聘信息</a>
+        </ol>
+        <ol>
+        <a href="">校园招聘</a>
+        </ol>
+        <ol>
+        <a href="">联系我们</a>
+        </ol>
+      </ul>
+      </li>
+      <li>
+        <h2>艺龙APP下载</h2>
+        <div class="foot-ul-down"></div>
+      </li>
+      <li>
+        <h2>艺龙官方微信</h2>
+        <div class="foot-ul-weixin"></div>
+      </li>
+    </ul>
+    <small>&copy;1999-2015eLong,Inc or its affiliates.All Rights Reserved.京IC证010011号京公网安备110105026059<span></span></small>
+    <div>
+      <ul class="foot-secondul">
+        <li class="foot-secondul-li1"><a href=""></a></li>
+        <li class="foot-secondul-li2"><a href=""></a></li>
+        <li class="foot-secondul-li3"><a href=""></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

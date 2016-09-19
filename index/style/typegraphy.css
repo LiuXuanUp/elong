@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+.head-nav li a{font-size:14px;color:#999;}
+.head-phone .head-phone-ul{font-weight:normal;}
+.head-phone strong{color:#06F;}
+.head-shouji a{color:#f00;}
+.head-nav li a:hover{color:#f00;}
+.head-phone .head-phone-ul li a{color:#999;}
+.nav-div a{color:#fff;}
+.nav-div .nav-secondul li a:hover{color:#FF0;}
+.foot .foot-ul h2{font-size:18px;font-weight:normal;}
+.foot .foot-ul li ul ol a{font-size:14px;}
+.section-ul li a span h4{color:#fff;font-size:30px;font-weight:normal;}
+
+.banner-rightdiv1-ul li{font-weight:bold;color:#333;}
+.banner-div-leftul p{font-size:14px;}
+
+.article-h2{color:#f66;font-size:22px;font-weight:normal;}
+.article-h2 span{color:#999;font-size:14px;font-weight:normal;}
+.article-div-ul li{font-size:14px;}
+.article-div-ul li:hover{color:#f66;}
+.article-div-ul li:first-child h3 a{font-size:18px;font-weight:normal;}
+.article-seconddiv-ul1 p{font-size:14px;}
+.article-div-span a{font-size:14px;}
+.article-div-span a:hover{color:#f00;}
+
+
+.discount-h2{color:#49f;font-size:22px;font-weight:normal;}
+.discount-firstdiv li{font-size:14px;}
+.discount-firstdiv span a{font-size:14px;}
+.discount-firstdiv span a:hover{color:#f00;}
+.discount-firstdiv li:hover{color:#49f;}
+.discount-firstdiv li:first-child h3 a{font-size:18px;font-weight:normal;}
+.discount-seconddiv li{font-size:14px;}
+.discount-seconddiv li b{font-weight:normal;}
+.discount-seconddiv li em{color:#fff;}
+.discount-seconddiv .li-b4{color:#f00;}
+
+
+.raiders-h2{color:#89CA00;font-size:22px;font-weight:normal;}
+.raiders-leftdiv-ul li a{font-size:14px;}
+.raiders-rightdiv-ul li span{font-size:14px;}
+.raiders-rightdiv-ul li span:hover{color:#f00;}
+.service-bottomdiv form .service-submit{color:#fff;}
+.service-bottomdiv .service-bottomdiv-p1{color:#666;}
+.service-bottomdiv .service-bottomdiv-p2 a{color:#37d;font-size:14px;}
+.service-bottomdiv .service-bottomdiv-p2 a:hover{color:#f00;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

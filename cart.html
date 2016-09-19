@@ -1,0 +1,658 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/css.css">
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script>
+window.onload=function()
+{
+	headfunc();
+	loginshow();
+	function headfunc(){
+    var dzl=location.href;
+	var nav_firstul = document.getElementById("nav_firstul");
+	var list = nav_firstul.getElementsByTagName("li");
+	for(var i = 0; i < list.length; i++){
+		var ljdz = list[i].firstChild.getAttribute("href");
+		if(dzl.indexOf(ljdz) != -1){
+			list[i].firstChild.style.background = "#039";
+		}
+	} 
+}
+function loginshow(){
+	var oNav_secul1=document.getElementById("nav-secondul");
+	var oLoginoption=document.getElementById("loginoption");
+	oNav_secul1.onmouseover=function(){
+		clearTimeout(logtime);
+		oLoginoption.style.display='block';
+	}
+	oNav_secul1.onmouseout=function(){
+		logtime=setTimeout(function(){oLoginoption.style.display="none";},500);
+		oLoginoption.onmouseover=function(){
+			clearTimeout(logtime);	
+		}
+		oLoginoption.onmouseout=function(){
+			logtime=setTimeout(function(){oLoginoption.style.display="none";},500);
+			
+		}
+	}
+}
+	}
+</script>
+</head>
+
+<body>
+<header>
+  <div class="head">
+    <h1><a href="index.html"></a></h1>
+    <ul class="head-nav">
+      <li><a href="">积分广场</a></li>
+      <li><a href="">礼品卡</a></li>
+      <li class="head-nav-li3"><a href="">微信客服</a>
+        <div></div>
+        <span><img src="images/ss001.png" alt=""></span></li>
+      <li><a href="">帮助中心</a></li>
+      <li><a href="">English</a><span></span>
+        <ul class="head-nav-ul">
+          <ol>
+            <a href="">简体版</a>
+          </ol>
+          <ol>
+            <a href="">繁体版</a>
+          </ol>
+        </ul>
+      </li>
+    </ul>
+    <div class="head-shouji"><a href="">手机版<br />
+      <div></div>
+      <p></p>
+      专享五折酒店</a></div>
+    <div class="head-phone">7×24客服电话<strong>4009-333-333
+      <p></p>
+      <ul class="head-phone-ul">
+        <li><a href="">国内：4009-333-333</a></li>
+        <li class="head-phone-ul-li2"><a href="">香港：852-8131-8883<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;852-8131-8983</a></li>
+        <li><a href="">台湾：886-2-7717-8123</a></li>
+        <li><a href="">海外：86-10-6432-9999</a></li>
+      </ul>
+      </strong> </div>
+  </div>
+</header>
+<nav>
+  <div class="nav-div">
+    <ul class="nav-firstul" id="nav_firstul">
+      <li id="current"><a href="index.html">首页</a></li>
+      <li><a href="domestic-hotel.html">国内酒店</a></li>
+      <li><a href="tuan.html">团购</a></li>
+      <li class="nav-firstul-fourthli"><a href="inter_hotel.html">国际酒店</a>
+        <div></div>
+      </li>
+      <li class="nav-firstul-fifthli"><a href="ShortTermApartment.html">短租公寓</a>
+        <div></div>
+      </li>
+      <li><a href="flashsale.html">限时抢</a></li>
+      <li><a href="planet.html">机票</a></li>
+      <li class="nav-firstul-eighthli"><a href="train-ticket.html">火车票</a>
+        <div></div>
+      </li>
+      <li><a href="cart.html">汽车票</a></li>
+      <li><a href="index1.html">旅游指南</a></li>
+    </ul>
+    <ul class="nav-secondul" id="nav-secondul">
+      <li class="nav-secondul-li"><a href="">登录</a></li>
+      <li><a href="">注册</a></li>
+    </ul>
+  </div>
+  <div id="loginoption">
+    <div id="orangelogin"><a href="">登录</a></div>
+    <ul>
+      <li id="login_li1"><a href="">酒店订单</a></li>
+      <li id="login_li2"><a href="">团购订单</a></li>
+      <li id="login_li3"><a href="">机票订单</a></li>
+      <li id="login_li4"><a href="">火车票订单</a></li>
+      <li id="login_li5"><a href="">现金账户</a></li>
+      <li id="login_li6"><a href="">汽车票订单</a></li>
+      <li id="login_li7"><a href="">酒店收藏</a></li>
+      <li id="login_li8"><a href="">我的点评</a></li>
+      <li id="login_li9"><a href="">个人设置</a></li>
+    </ul>
+  </div>
+</nav>
+<section id="sectionC">
+  <div class="table">
+    <table cellspacing="0">
+      <thead>
+      <th>汽车票查询</th>
+          </thead>
+      <tbody>
+        <tr>
+          <td id="main"><input type="text" class="text" id="begin" value="中文/拼音/首字母">
+          <div class="floatbox_hide" style="display:none;">
+          <p>找不到i，更多城市持续开通中，敬请期待！</p>
+          </div>
+          <div class="floatbox_hide2">
+          <ul>
+            
+          </ul>
+          </div>
+            <div class="floatbox" id="floatbox">
+              <p>可直接选择城市或输入中文/拼音/简拼输入</p>
+              <div class="tab">
+                <div class="tab_menu">
+                  <ul>
+                    <li class="selected">热门城市</li>
+                    <li>按省份</li>
+                    <li>按拼音</li>
+                  </ul>
+                </div>
+                <div class="tab_box">
+                  <div id="allcity">
+                    <ul>
+                      <span>直辖市</span>
+                      <li> <a href="b" title="bj">北京</a> <a href="t" title="tj">天津</a> <a href="s" title="sh">上海</a> <a href="c" title="cq">重庆</a> </li>
+                    </ul>
+                    <ul>
+                      <span>河北</span>
+                      <li> <a href="s" title="sjz">石家庄</a> <a href="t" title="ts">唐山</a> <a href="q" title="qhd">秦皇岛</a> <a href="h" title="gs">邯郸</a> <a href="x">邢台</a> <a href="b">保定</a> <a href="c">承德</a> <a href="c">沧州</a> <a href="l">廊坊</a> </li>
+                    </ul>
+                    <ul>
+                      <span>山西</span>
+                      <li> <a href="t" title="ty">太原</a> <a href="d" title="dt">大同</a> <a href="y">阳泉</a> <a href="y">运城</a> <a href="x">忻州</a> </li>
+                    </ul>
+                    <ul>
+                      <span>内蒙古</span>
+                      <li> <a href="b" title="bt">包头</a> <a href="e">鄂尔多斯</a> </li>
+                    </ul>
+                    <ul>
+                      <span>辽宁</span>
+                      <li> <a href="d">大连</a> <a href="a">鞍山</a> <a href="f">抚顺</a> <a href="b">本溪</a> <a href="d">丹东</a> <a href="j">锦州</a> <a href="y">营口</a> <a href="l">辽阳</a> </li>
+                    </ul>
+                    <ul>
+                      <span>吉林</span>
+                      <li><a href="j">吉林</a></li>
+                    </ul>
+                    <ul>
+                      <span>黑龙江</span>
+                      <li> <a href="q">齐齐哈尔</a> <a href="d">大庆</a> <a href="m">牡丹江</a> </li>
+                    </ul>
+                    <ul>
+                      <span>江苏</span>
+                      <li> <a href="n">南京</a> <a href="w">无锡</a> <a href="x">徐州</a> <a href="c">常州</a> <a href="s">苏州</a> <a href="n">南通</a> <a href="l">连云港</a> <a href="h">淮安</a> <a href="y">盐城</a> <a href="y">扬州</a> <a href="z">镇江</a> <a href="t">泰州</a> </li>
+                    </ul>
+                    <ul>
+                      <span>浙江</span>
+                      <li> <a href="n">宁波</a> <a href="w">温州</a> <a href="j">嘉兴</a> <a href="h">湖州</a> <a href="s">绍兴</a> <a href="j">金华</a> <a href="z">衢州</a> <a href="l">丽水</a> </li>
+                    </ul>
+                    <ul>
+                      <span>安徽</span>
+                      <li> <a href="h">合肥</a> <a href="w">芜湖</a> <a href="f">蚌埠</a> <a href="h">淮南</a> <a href="m">马鞍山</a> <a href="a">安庆</a> </li>
+                    </ul>
+                    <ul>
+                      <span>福建</span>
+                      <li> <a href="f">福州</a> <a href="x">厦门</a> <a href="q">泉州</a> <a href="z">漳州</a> </li>
+                    </ul>
+                    <ul>
+                      <span>江西</span>
+                      <li> <a href="n">南昌</a> <a href="j">景德镇</a> <a href="j">九江</a> <a href="x">新余</a> <a href="g">赣州</a> </li>
+                    </ul>
+                    <ul>
+                      <span>山东</span>
+                      <li> <a href="j">济南</a> <a href="q">青岛</a> <a href="z">淄博</a> <a href="d">东营</a> <a href="y">烟台</a> <a href="w">潍坊</a> <a href="j">济宁</a> <a href="t">泰安</a> <a href="w">威海</a> <a href="r">日照</a> <a href="l">临沂</a> <a href="d">德州</a> <a href="l">聊城</a> <a href="b">滨州</a> </li>
+                    </ul>
+                    <ul>
+                      <span>河南</span>
+                      <li> <a href="z">郑州</a> <a href="k">开封</a> <a href="l">洛阳</a> <a href="p">平顶山</a> <a href="a">安阳</a> <a href="x">新乡</a> <a href="j">焦作</a> <a href="p">濮阳</a> <a href="x">许昌</a> <a href="n">南阳</a> </li>
+                    </ul>
+                    <ul>
+                      <span>湖北</span>
+                      <li> <a href="w">武汉</a> <a href="y">宜昌</a> <a href="x">襄樊</a> <a href="j">荆州</a> </li>
+                    </ul>
+                    <ul>
+                      <span>湖南</span>
+                      <li> <a href="c">长沙</a> <a href="z">株洲</a> <a href="x">湘潭</a> <a href="h">衡阳</a> <a href="y">岳阳</a> <a href="c">常德</a> </li>
+                    </ul>
+                    <ul>
+                      <span>广东</span>
+                      <li> <a href="g">广州</a> <a href="s">深圳</a> <a href="z">珠海</a> <a href="s">汕头</a> <a href="f">佛山</a> <a href="j">江门</a> <a href="z">肇庆</a> <a href="h">惠州</a> <a href="m">梅州</a> <a href="q">清远</a> <a href="d">东莞</a> <a href="z">中山</a> <a href="j">揭阳</a> <a href="z">中山</a> </li>
+                    </ul>
+                    <ul>
+                      <span>广西</span>
+                      <li><a href="n">南宁</a><a href="l">柳州</a><a href="g">桂林</a><a href="b">北海</a></li>
+                    </ul>
+                    <ul>
+                      <span>海南</span>
+                      <li><a href="h">海口</a></li>
+                    </ul>
+                    <ul>
+                      <span>四川</span>
+                      <li><a href="c">成都</a><a href="d">德阳</a><a href="m">绵阳</a><a href="n">南充</a><a href="y">宜宾</a></li>
+                    </ul>
+                    <ul>
+                      <span>贵州</span>
+                      <li><a href="z">遵义</a></li>
+                    </ul>
+                    <ul>
+                      <span>云南</span>
+                      <li><a href="k">昆明</a><a href="d">大理</a></li>
+                    </ul>
+                    <ul>
+                      <span>陕西</span>
+                      <li><a href="x">西安</a><a href="b">宝鸡</a><a href="y">延安</a><a href="y">榆林</a></li>
+                    </ul>
+                    <ul>
+                      <span>青海</span>
+                      <li><a href="x">西宁</a></li>
+                    </ul>
+                    <ul>
+                      <span>宁夏</span>
+                      <li><a href="y">银川</a></li>
+                    </ul>
+                    <ul>
+                      <span>新疆</span>
+                      <li><a href="k">喀什</a></li>
+                    </ul>
+                  </div>
+                  <div class="hide" id="div2"></div>
+                  <div class="hide" id="div3">
+                     <ul class="ctrl_order">
+                      <li class="hover">ABCD</li>
+                      <li>EFGHJ</li>
+                      <li>KLMN</li>
+                      <li>PQRSTW</li>
+                      <li>XYZ</li>
+                    </ul>
+                    <div class="order">
+                      <ul class="indexa">
+                        <strong>A</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexb">
+                        <strong>B</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexc">
+                        <strong>C</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexd">
+                        <strong>D</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexf">
+                        <strong>F</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexg">
+                        <strong>G</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexh">
+                        <strong>H</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexj">
+                        <strong>J</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexk">
+                        <strong>K</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexl">
+                        <strong>L</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexm">
+                        <strong>M</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexn">
+                        <strong>N</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexp">
+                        <strong>P</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexq">
+                        <strong>Q</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexr">
+                        <strong>R</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexs">
+                        <strong>S</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indext">
+                        <strong>T</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexw">
+                        <strong>W</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexx">
+                        <strong>X</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexy">
+                        <strong>Y</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexz">
+                        <strong>Z</strong>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="change"></span>
+            <input type="text" class="text" id="end" value="中文/拼音/首字母">
+            <div class="floatbox1" id="floatbox1">
+              <p>可直接选择城市或输入中文/拼音/简拼输入</p>
+              <div class="tab1">
+                <div class="tab1_menu">
+                  <ul>
+                    <li class="selected">按省份</li>
+                    <li>按拼音</li>
+                  </ul>
+                </div>
+                <div class="tab1_box">
+                  <div id="ediv1"> </div>
+                  <div class="hide" id="ediv2">
+                    <ul class="ctrl_order">
+                      <li class="hover">ABCD</li>
+                      <li>EFGHJ</li>
+                      <li>KLMN</li>
+                      <li>PQRSTW</li>
+                      <li>XYZ</li>
+                    </ul>
+                    <div class="order">
+                      <ul class="indexa">
+                        <strong>A</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexb">
+                        <strong>B</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexc">
+                        <strong>C</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexd">
+                        <strong>D</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexf">
+                        <strong>F</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexg">
+                        <strong>G</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexh">
+                        <strong>H</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexj">
+                        <strong>J</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexk">
+                        <strong>K</strong>
+
+                        <li></li>
+                      </ul>
+                      <ul class="indexl">
+                        <strong>L</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexm">
+                        <strong>M</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexn">
+                        <strong>N</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexp">
+                        <strong>P</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexq">
+                        <strong>Q</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexr">
+                        <strong>R</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexs">
+                        <strong>S</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indext">
+                        <strong>T</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexw">
+                        <strong>W</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexx">
+                        <strong>X</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexy">
+                        <strong>Y</strong>
+                        <li></li>
+                      </ul>
+                      <ul class="indexz">
+                        <strong>Z</strong>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+              <input type="button" id="btn">
+            </div></td>
+        </tr>
+        <tr>
+          <td>&nbsp;
+            <p>支持31个省、直辖市、自治区，超过1500个市、区、县的车次查询</p></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<div class="banner">
+  <ul>
+    <li><a href=""><span id="spana" onMouseOver="shake(this,'onmouseout')"></span>
+      <div class="content"> <strong>快速出票</strong>
+        <p>第一时间反馈出票结果</p>
+      </div>
+      </a></li>
+    <li><a href=""><span id="spanb" onMouseOver="shake(this,'onmouseout')"></span>
+      <div class="content"> <strong>全面覆盖</strong>
+        <p>近百个城市已能在线预订</p>
+      </div>
+      </a></li>
+    <li><a href=""><span id="spanc" onMouseOver="shake(this,'onmouseout')"></span>
+      <div class="content"> <strong>安全支付</strong>
+        <p>支持支付宝支付，放心购票</p>
+      </div>
+      </a></li>
+  </ul>
+  <script language="JavaScript1.2"> 
+var typ=["transform"];
+range=45 ;
+function shake(o,end){ 
+range=eval(-1*range);
+o["style"][typ[0]]="rotate("+range+"deg)"; 
+var shakeTimer=setTimeout(function(){shake(o,end)},100); 
+o[end]=function(){clearTimeout(shakeTimer);o["style"][typ[0]]="rotate(0deg)";}; 
+} 
+</script> 
+</div>
+<article> 
+  <!--汽车周边游的菜单-->
+ <div class="art_menu">
+    <h2>汽车周边游</h2>
+    <ul>
+      <li class="active">上海出发<i></i></li>
+      <li>北京出发<i></i></li>
+      <li>武汉出发<i></i></li>
+      <li>苏州出发<i></i></li>
+    </ul>
+  </div>
+  <!--汽车周边游的显示块-->
+ <div class="show">
+      <ul style="display: block;">
+        <li>
+          <div class="bs_pic"><a title="西塘"><img src="images/xt.jpg" width="240" height="190"><i>西塘</i></a></div>
+          <div class="bs_name"> <a> <span title="上海" class="bs_name_begin">上海</span> <i></i> <span class="bs_name_end">嘉兴</span> </a> </div>
+          <div class="bs_type"><a><i></i> <span class="price_a">汽车票</span><span class="price_b">￥</span><span class="price">20.00</span></a></div>
+        </li>
+        <li>
+          <div class="bs_pic"> <a title="大明山风景区"> <img src="images/dmsfjq.jpg" width="240" height="190"> <i>大明山风景区</i> </a> </div>
+          <div class="bs_name"> <a> <span title="上海" class="bs_name_begin">上海</span> <i></i> <span title="临安" class="bs_name_end">临安</span> </a> </div>
+          <div class="bs_type"> <a> <i></i> <span class="price_a">汽车票</span><span class="price_b">￥</span><span class="price">62.00</span> </a> </div>
+        </li>
+        <li>
+          <div class="bs_pic"> <a title="拙政园"> <img src="images/zzy.jpg" width="240" height="190"> <i>拙政园</i> </a> </div>
+          <div class="bs_name"> <a> <span title="上海" class="bs_name_begin">上海</span> <i></i> <span title="苏州" class="bs_name_end">苏州</span> </a> </div>
+          <div class="bs_type"> <a> <i></i> <span class="price_a">汽车票</span><span class="price_b">￥</span><span class="price">10.00</span> </a> </div>
+        </li>
+        <li>
+          <div class="bs_pic"> <a title="周庄"> <img src="images/zz.jpg" width="240" height="190"> <i>周庄</i> </a> </div>
+          <div class="bs_name"> <a> <span title="上海" class="bs_name_begin">上海</span> <i></i> <span title="昆山" class="bs_name_end">昆山</span> </a> </div>
+          <div class="bs_type"> <a> <i></i> <span class="price_a">汽车票</span><span class="price_b">￥</span><span class="price">10.00</span> </a> </div>
+        </li>
+        <li>
+          <div class="bs_pic"> <a title="溱湖湿地公园"> <img src="images/qhsdgy.jpg" width="240" height="190"> <i>溱湖湿地公园</i> </a> </div>
+          <div class="bs_name"> <a> <span title="上海" class="bs_name_begin">上海</span> <i></i> <span title="泰州" class="bs_name_end">泰州</span> </a> </div>
+          <div class="bs_type"> <a> <i></i> <span class="price_a">汽车票</span><span class="price_b">￥</span><span class="price">26.00</span> </a> </div>
+        </li>
+        <li>
+          <div class="bs_pic"> <a title="天目湖御水温泉"> <img src="images/tmhyswq.jpg" width="240" height="190"> <i>天目湖御水温泉</i> </a> </div>
+          <div class="bs_name"> <a> <span title="上海" class="bs_name_begin">上海</span> <i></i> <span title="溧阳" class="bs_name_end">溧阳</span> </a> </div>
+          <div class="bs_type"> <a> <i></i> <span class="price_a">汽车票</span><span class="price_b">￥</span><span class="price">40.00</span> </a> </div>
+        </li>
+        <li>
+          <div class="bs_pic"> <a title="乌镇"> <img src="images/wz.jpg" width="240" height="190"> <i>乌镇</i> </a> </div>
+          <div class="bs_name"> <a> <span title="上海" class="bs_name_begin">上海</span> <i></i> <span title="桐乡" class="bs_name_end">桐乡</span> </a> </div>
+          <div class="bs_type"><a><i></i> <span class="price_a">汽车票</span><span class="price_b">￥</span><span class="price">33.00</span> </a> </div>
+        </li>
+        <li>
+          <div class="bs_pic"><a title="暨阳湖生态园区"><img src="images/jyhstyq.jpg" width="240" height="190"><i>暨阳湖生态园区</i></a></div>
+          <div class="bs_name"><a target="_blank"><span title="上海" class="bs_name_begin">上海</span><i></i><span title="张家港" class="bs_name_end">张家港</span></a></div>
+          <div class="bs_type"><a><i></i> <span class="price_a">汽车票</span><span class="price_b">￥</span><span class="price">10.00</span></a></div>
+        </li>
+      </ul>
+    </div>
+<!--大家都在定的菜单-->
+ <div class="art_menu">
+    <h2>大家都在订</h2>
+    <ul>
+      <li class="active">广州出发<i></i></li>
+      <li class="">无锡出发<i></i></li>
+      <li class="">上海出发<i></i></li>
+      <li class="">厦门出发<i></i></li>
+    </ul>
+  </div>
+  <!--大家都在定的显示-->
+ <div class="show2">
+       <ul class="information">
+         <li>
+         <div class="car_name">
+         <span class="car_start" title="广州">广州</span>
+         <i class="car_arrow"></i>
+         <span class="car_end" title="佛山">佛山</span>
+         </div>
+         <div class="car_type">
+         <a>
+         <i class="car_type_bus"></i>
+         <span class="car_type_price">汽车票</span>
+         <span class="car_type_pricea">￥</span>
+         <span class="car_type_priceb">10.00</span>
+         </a>
+         </div>
+         </li>
+      </ul>
+ </div>
+</article>
+<footer>
+  <div class="foot">
+    <ul class="foot-ul">
+      <li>
+      <h2>加盟合作</h2>
+      <ul>
+        <ol>
+        <a href="">酒店加盟</a>
+        </ol>
+ 		       <ol>
+        <a href="">分销联盟</a>
+        </ol>
+        <ol>
+        <a href="">代理合作</a>
+        </ol>
+   	     <ol>
+        <a href="">广告服务</a>
+        </ol>
+      </ul>
+      </li>
+      <li>
+      <h2>关于艺龙</h2>
+      <ul>
+        <ol>
+        <a href="">关于艺龙</a>
+        </ol>
+        <ol>
+        <a href="">酒店大全</a>
+        </ol>
+        <ol>
+        <a href="">招聘信息</a>
+        </ol>
+        <ol>
+        <a href="">校园招聘</a>
+        </ol>
+        <ol>
+        <a href="">联系我们</a>
+        </ol>
+      </ul>
+      </li>
+      <li>
+        <h2>艺龙APP下载</h2>
+        <div class="foot-ul-down"></div>
+      </li>
+      <li>
+        <h2>艺龙官方微信</h2>
+        <div class="foot-ul-weixin"></div>
+      </li>
+    </ul>
+    <small>&copy;1999-2015eLong,Inc or its affiliates.All Rights Reserved.京IC证010011号京公网安备110105026059<span></span></small>
+    <div>
+      <ul class="foot-secondul">
+        <li class="foot-secondul-li1"><a href=""></a></li>
+        <li class="foot-secondul-li2"><a href=""></a></li>
+        <li class="foot-secondul-li3"><a href=""></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

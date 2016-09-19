@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+body{ width:1349px; overflow:hidden;}
+*{ margin:0px; padding:0px;}
+a{ text-decoration:none;}
+li{ list-style:none;}
+#welcome_div1{ background:url(images/itsabigworld2.png); width:1200px; height:659px; margin-left:110px; overflow:hidden; }
+#welcome_div2{background:url(images/welcome.png); width:118px; height:33px; display:none;}
+#welcome_div1 p{ font-family:"微软雅黑"; color:#FF6; font-size:30px; margin-left:370px; margin-top:270px; text-shadow:5px 5px 5px #FF6633;}
+#welcome_div3{ margin-left:260px; margin-top:230px;}
+#welcome_div3 ul{ overflow:hidden;}
+#welcome_div3 ul li{ float:left; margin-right:20px; padding:5px 5px;}
+#welcome_div3 ul li a{ color:#F90; font-size:12px; font-family:"微软雅黑";}
+#welcome_div3 ul li:hover{ background:rgba(255,102,51,.7); }
+#welcome_div3 ul li:hover a{color:#fff;}
+/*.welcome_p2{ margin-left:300px; margin-top:300px;}*/
+#welcome_div4{ font-size:16px; color:#FC6;font-family:"微软雅黑"; font-weight:bold; margin-top:-180px; margin-left:270px;}
+audio{ position:absolute; top:0px; left:0px;}
+</style>
+<script>
+function mouseflower(){
+	var oDiv2=document.getElementById("welcome_div2");
+	document.onmousemove=function(e){
+		oEvent=e||event;
+		x=oEvent.clientX;
+		y=oEvent.clientY;
+		oDiv2.style.position="absolute";
+		oDiv2.style.display="block";	
+		oDiv2.style.left=(x+10)+"px";
+		oDiv2.style.top=y+"px";
+		
+	}
+}
+	timer=setInterval("mouseflower()",1);
+
+</script>
+</head>
+
+<body>
+<div id="welcome_div1">
+  <div id="welcome_div2"></div>
+  <p>世界那么大，我想去看看</p>
+  <div id="welcome_div3">
+    <ul>
+      <li id="current"><a href="index.html">首页</a></li>
+      <li><a href="domestic-hotel.html">国内酒店</a></li>
+      <li><a href="tuan.html">团购</a></li>
+      <li class="nav-firstul-fourthli"><a href="inter_hotel.html">国际酒店</a>
+        <div></div>
+      </li>
+      <li class="nav-firstul-fifthli"><a href="ShortTermApartment.html">短租公寓</a>
+        <div></div>
+      </li>
+      <li><a href="flashsale.html">限时抢</a></li>
+      <li><a href="planet.html">机票</a></li>
+      <li class="nav-firstul-eighthli"><a href="train-ticket.html">火车票</a>
+        <div></div>
+      </li>
+      <li><a href="cart.html">汽车票</a></li>
+    </ul>
+  </div>
+  <div id="welcome_div4">
+    制作人员：鄢敏、郭文斌、甘峰峰、徐晓媛、刘璇、王天华、范丽晶、王昕
+  </div>
+</div>
+<audio src="Taylor Swift - Back To December.mp3" autoplay="autoplay"></audio>
+</body>
+</html>

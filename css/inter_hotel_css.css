@@ -1,0 +1,523 @@
+@charset "utf-8";
+/* CSS Document */
+a{ text-decoration:none;}
+
+
+
+*{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;color:#000;}
+body{font-family:"微软雅黑";}
+img{border:none;}
+.head{width:1200px;margin:0px auto;height:48px;margin-top:20px;}
+h1{width:114px;}
+h1 a{display:block;height:48px;width:114px;position:relative;left:0;top:0;}
+.head-nav{height:22px;width:380px;position:relative;left:450px;top:-35px;}
+.head-nav li{float:left;border-right:1px solid #ccc;padding-right:10px;margin-left:10px;}
+.head-nav li:last-child{border:none;position:relative;left:0;top:0;}
+.head-nav .head-nav-li3{position:relative;left:0;top:0;}
+.head-nav .head-nav-li3 span{position:absolute;left:0px;top:30px;display:none;border:1px solid #ccc; z-index:997;}
+.head-nav .head-nav-li3:hover span{display:block;}
+.head-nav .head-nav-li3 div{height:10px;width:20px;position:absolute;left:30px;top:21px;z-index:998;display:none;}
+.head-nav .head-nav-li3:hover div{display:block;}
+.head-nav-ul{position:absolute;left:-1px;top:20px;width:73px;border:1px solid #ccc;border-top:none;display:none; z-index:99;}
+.head-nav li:last-child{border-right:none;border:1px solid #fff;border-bottom:1px dashed #fff;}
+.head-nav li:last-child span{display:inline-block;height:10px;width:15px;}
+.head-nav li:last-child:hover .head-nav-ul{display:block;}
+.head-nav li:last-child:hover{border:1px solid #ccc;border-bottom:1px dashed #ccc;}
+.head-nav-ul ol{height:30px;line-height:30px;}
+.head-nav-ul ol:first-child{border-bottom:1px dashed #ccc;}
+.head-nav-ul ol:last-child{border-bottom:none;}
+.head-shouji{clear:both;height:45px;width:120px;position:relative;left:850px;top:-63px;padding-left:50px;}
+.head-shouji div{height:10px;width:20px;position:absolute;left:30px;top:41px;z-index:996;display:none;}
+.head-shouji:hover div{display:block;}
+.head-shouji p{height:93px;width:218px;position:absolute;left:0;top:50px;display:none;border:1px solid #ccc;z-index:995;}
+.head-shouji:hover p{display:block;}
+.head-phone{height:45px;width:120px;position:relative;left:1020px;top:-110px;padding-left:50px;}
+.head-phone .head-phone-ul{position:absolute;left:0px;top:50px;border:1px solid #ccc;padding:0px 10px;display:none;z-index:999;}
+.head-phone strong:hover .head-phone-ul{display:block;}
+.head-phone strong p{display:block;height:10px;width:20px;position:absolute;left:40px;top:41px;z-index:1000;display:none;}
+.head-phone strong:hover p{display:block;}
+.head-phone .head-phone-ul a{display:block;width:180px;border-bottom:1px dashed #ccc;font-size:14px;height:30px;line-height:30px;}
+.head-phone .head-phone-ul li:last-child a{border-bottom:none;}
+.head-phone .head-phone-ul .head-phone-ul-li2 a{height:60px;line-height:30px;}
+footer{border-top:1px solid #ccc;margin:20px 0;min-width:1200px;}
+.foot{width:1200px;margin:0 auto;margin-top:20px;}
+.foot .foot-ul{overflow:hidden;}
+.foot .foot-ul h2{border-left:3px solid #06C;padding-left:8px;}
+.foot .foot-ul li{float:left;margin-left:150px;}
+.foot .foot-ul li ul ol{width:94px;}
+.foot .foot-ul li ul ol a{display:block;height:30px;line-height:30px;width:84px;text-align:center;margin-left:0px;transition:margin-left .5s;}
+.foot .foot-ul li ul ol a:hover{margin-left:5px;transition:margin-left .5s;}
+.foot .foot-ul li .foot-ul-down{width:96px;height:96px;margin-top:20px;}
+.foot .foot-ul li .foot-ul-weixin{width:96px;height:96px;margin-top:20px;}
+.foot small{display:block;width:1200px;text-align:center;}
+.foot small span{display:inline-block;width:19px;height:24px;}
+.foot-secondul{overflow:hidden;}
+.foot-secondul li{float:left;margin-top:40px;transition:margin-top 1s;}
+.foot-secondul li:hover{margin-top:30px;transition:margin-top 1s;}
+.foot-secondul li:first-child{margin-left:507px;}
+.foot-secondul .foot-secondul-li1 a{display:block;width:92px;height:30px;}
+.foot-secondul .foot-secondul-li2 a{display:block;width:92px;height:30px;}
+.foot-secondul .foot-secondul-li3 a{display:block;width:92px;height:30px;}
+
+nav{clear:both;}
+.nav-div{width:1200px;margin:0 auto;height:40px;}
+.nav-div .nav-firstul{float:left;}
+.nav-div .nav-firstul li{float:left;border-right:1px solid #ccc;}
+.nav-div .nav-firstul li a{display:block;height:40px;line-height:40px;padding:0 10px;}
+.nav-div .nav-firstul .nav-firstul-fourthli{position:relative;left:0;top:0;}
+.nav-div .nav-firstul .nav-firstul-fifthli{position:relative;left:0;top:0;}
+.nav-div .nav-firstul .nav-firstul-eighthli{position:relative;left:0;top:0;}
+.nav-div .nav-firstul .nav-firstul-fourthli div{height:24px;width:24px;position:absolute;left:30px;top:-10px;}
+.nav-div .nav-firstul .nav-firstul-fifthli div{width:40px;height:24px;position:absolute;left:30px;top:-10px;}
+.nav-div .nav-firstul .nav-firstul-eighthli div{width:17px;height:24px;position:absolute;left:30px;top:-10px;}
+.nav-div .nav-secondul{float:right;padding:0 10px;position:relative;left:0;top:0;}
+.nav-div .nav-secondul li{float:left;height:40px;line-height:40px;}
+.nav-div .nav-secondul li a{display:block;height:20px;line-height:20px;margin-top:10px;padding:0 10px;}
+.nav-div .nav-secondul .nav-secondul-li a{border-right:1px solid #ccc;}
+h1 a{background:url(../images/icon2015-0.png) -658px 0 no-repeat;}
+.head-shouji{background:url(../images/com_icon_phone.gif) no-repeat;}
+.head-phone{background:url(image/icon_2015.png) -43px 0 no-repeat;}
+.head-nav li:last-child span{background:url(../images/icon_2015.png) -355px -10px no-repeat;}
+.head-nav .head-nav-li3 div{background:url(../images/icon_2015.png) -208px 0 no-repeat;}
+.head-nav .head-nav-li3 div{background:url(../images/icon_2015.png) -208px 0 no-repeat;}
+.head-shouji div{background:url(../images/icon_2015.png) -208px 0 no-repeat;}
+.head-shouji p{background:url(../images/icon_2015.png) -381px -239px no-repeat;}
+.head-phone{background:url(../images/icon_2015.png) -43px 0 no-repeat;}
+.head-phone strong p{background:url(../images/icon_2015.png) -208px 0 no-repeat;}
+.head-phone .head-phone-ul{background:#fff;}
+.head-nav li .head-nav-ul{background:#fff;}
+.nav-div .nav-firstul .nav-firstul-fourthli div{background:url(../images/el_com.png) -509px 0 no-repeat;}
+
+
+nav{background:#06F; position:relative;}
+.nav-div{background:#06F;}
+.nav-div .nav-secondul{background:#039;}
+.nav-div .nav-firstul li:hover{background:#03F;}
+.nav-div .nav-firstul .nav-firstul-fourthli div{background:url(../images/el_com.png) -509px 0 no-repeat;}
+.nav-div .nav-firstul .nav-firstul-fifthli div{background:url(../images/el_com.png) -470px -29px no-repeat;}
+.nav-div .nav-firstul .nav-firstul-eighthli div{background:url(../images/el_com.png) -490px 0px no-repeat;}
+.foot .foot-ul li .foot-ul-down{background:url(../images/icon_2015.png) -499px 0 no-repeat;}
+.foot .foot-ul li .foot-ul-weixin{background:url(../images/icon_2015.png) -501px -104px no-repeat;}
+.foot .foot-ul li ul ol a:hover{color:#f00;}
+.foot small span{background:url(../images/el_com.png) -940px -198px no-repeat;}
+.foot-secondul .foot-secondul-li1 a{background:url(../images/el_com.png) -472px -441px no-repeat;}
+.foot-secondul .foot-secondul-li2 a{background:url(../images/el_com.png) -564px -441px no-repeat;}
+.foot-secondul .foot-secondul-li3 a{background:url(../images/el_com.png) -656px -441px no-repeat;}
+.head-nav li a{font-size:14px;color:#999;}
+.head-phone .head-phone-ul{font-weight:normal;}
+.head-phone strong{color:#06F;}
+.head-shouji a{color:#f00;}
+.head-nav li a:hover{color:#f00;}
+.head-phone .head-phone-ul li a{color:#999;}
+.nav-div a{color:#fff;}
+.nav-div .nav-secondul li a:hover{color:#FF0;}
+.foot .foot-ul h2{font-size:18px;font-weight:normal;}
+.foot .foot-ul li ul ol a{font-size:14px;}
+#loginoption{ position:absolute; width:210px; height:280px; top:0px; left:0px; background:#fff; z-index:1000; top:40px; left:1067px; display:none;}
+#loginoption #orangelogin{ margin:15px 14px;}
+#loginoption #orangelogin a{ display:block;  background: #f80; width: 180px; height: 34px; line-height: 34px; text-align: center; font: 18px/34px Microsoft YaHei; color: #fff; text-decoration: none; border-radius: 3px;}
+#loginoption #orangelogin a:hover{ background:rgb(238,102,0);}
+#loginoption ul{ overflow:hidden;}
+#loginoption ul li{ width:63px; height:53px; float:left;  margin-left:5px; margin-bottom:5px; margin-top:10px;}
+#loginoption ul li a{  width: 60px; display: block; padding-top: 34px;
+  text-align: center; text-decoration: none; color: #999; font-size:12px;}
+#login_li1{ background:url(../images/icon2015-0.png) -146px -684px no-repeat;}
+#login_li2{ background:url(../images/icon2015-0.png) -212px -574px no-repeat;}
+#login_li3{ background:url(../images/icon2015-0.png) -212px -684px no-repeat;}
+#login_li4{ background:url(../images/icon2015-0.png) -146px -629px no-repeat;}
+#login_li5{ background:url(../images/icon2015-0.png) -210px -627px no-repeat;}
+#login_li6{ background:url(../images/icon2015-0.png) -272px -624px no-repeat;}
+#login_li7{ background:url(../images/icon2015-0.png) -147px -574px no-repeat;}
+#login_li8{ background:url(../images/icon2015-0.png) -276px -574px no-repeat;}
+#login_li9{ background:url(../images/icon2015-0.png) -276px -682px no-repeat;}
+#loginoption ul li:hover a{ color:#37c;}
+#login_li1:hover{background-position: 15px -684px;}
+#login_li2:hover{background-position: -38px -574px;}
+#login_li3:hover{background-position: -42px -684px;}
+#login_li4:hover{background-position: 14px -629px;}
+#login_li5:hover{background-position: -42px -626px;}
+#login_li6:hover{background-position: -94px -624px;}
+#login_li7:hover{background-position: 13px -573px;}
+#login_li8:hover{background-position: -95px -573px;}
+#login_li9:hover{background-position: -95px -682px;}
+
+
+
+
+
+
+
+.inter_banner1{ max-width:100%; height:22.5em; background:url(../images/banner_big_1.jpg) -285px 0; position:relative;}
+.inter_banner1 .inter_all{ width:940px; height:70px; background:rgba(51,51,51,.5); position:absolute; top: 120px; left:205px; position:relative;}
+.inter_banner1 .inter_sec_div1{ background:#fff; position:absolute; top:15px; left:15px;}
+.inter_banner1 .inter_sec_div1 input{ width:226px; height:32px; float:left; font-family:"微软雅黑"; color:#CCC;font-size:16px;}
+.inter_banner1 .inter_sec_div2{ width:290px; height:38px; background:#fff; position:absolute; top:15px; left:252px;}
+.inter_banner1 .showsearch_before{ position:absolute; top:360px;left:1245px;}
+.inter_banner1 .showsearch_before a.downdirecta{ display:block; width:32px; height:17px; background:url(../images/icons.png) -150px -150px; }
+.inter_banner1 .showsearch_before a.downdirecta:hover{ background:url(../images/icons.png) -150px -170px;}
+.inter_banner1 .showsearch_before a.updirecta{background:url(../images/icons.png) -100px -150px;  display:block; width:32px; height:17px;}
+.inter_banner1 .showsearch_before a.updirecta:hover{ background:url(../images/icons.png) -100px -170px;}
+.inter_sec_div2 .inter_Time{ font-size:16px; color:#ba8a49; font-family:"微软雅黑";font-size:16px; margin-left:5px; line-height:38px;}
+.inter_sec_div2 input{ width:84px; padding-left:4px;   vertical-align: middle;  background: #ededed;border: 1px solid #ededed; font-family:"微软雅黑";font-size:16px; color:#555;}
+.inter_sec_div3{ position:absolute; top:15px; left:550px;}
+.inter_sec_div3 input{ width:226px; height:32px; font-family:"微软雅黑"; color:#CCC;font-size:16px;}
+.inter_sec_div4 .inter_search{ background:#f55; height:40px; width:130px; border:none; border-radius:3px; position:absolute; top:15px; right:15px;font: 18px/40px Microsoft yahei; color:#fff;}
+.inter_sec_div4 .inter_search span{display:inline-block; width:22px; height:20px; background:url(../images/icons.png) no-repeat -764px -10px; margin-right:5px;}
+.inter_sec_div4 .inter_search:hover{ background:#C00;}
+.inside_city{ width:340px; height:177px; position:absolute; border:3px solid #000; background:#fff; top:173px; left:220px; display:none;}
+.inside_city .box_p1{color: #999;margin: 6px 6px 0 6px; font-size:12px;}
+.inside_city .box_ul1{ font-size:12px;  overflow:visible; margin:0 8px 0 8px; height:34px; border-bottom:2px solid #BBBBBB; position:relative;}
+.inside_city .box_ul1 li{  margin-right: 15px; line-height:30px; float:left; position:absolute; bottom:-2px;}
+.inside_city .box_ul1 .box_ul1_li1{ top:8px; left:8px;}
+.inside_city .box_ul1 .box_ul1_li2{ top:8px; left:45px;}
+.inside_city .box_ul1 .box_ul1_li3{ top:8px; left:82px;}
+.inside_city .box_ul1 .box_ul1_li4{ top:8px; left:119px;}
+.inside_city .box_ul1 .box_ul1_li5{ top:8px; left:156px;}
+.inside_city .box_ul1 .box_ul1_li6{ top:8px; left:203px;}
+.inside_city .box_ul1 .box_ul1_current a{ font-weight:bold; color:#3366cc;}
+.inside_city .box_ul1 .box_ul1_current{ border-bottom:2px solid #3366cc;}
+.inside_city .box_ul1 li a{ display:block; color:#555;}
+.inside_city .box_ul1 li:hover{ border-bottom:2px solid #3366cc;}
+.inside_city .box_ul1 li:hover a{ color:#3366cc;}
+.inside_city .box_div1{}
+.inside_city .box_div1 ul{ float:left; margin-top:10px; margin-left:8px; width:70px;}
+.inside_city .box_div1 ul li{ font-size:12px; line-height:20px;}
+.inside_city .box_div1 ul li a{color:#555;}
+.inside_city .box_div1 ul li a:hover{ color:#3366cc;}
+.inside_city .box_div2{ display:none;}
+.inside_city .box_div2 ul{ float:left; margin-top:10px; margin-left:8px; width:70px;}
+.inside_city .box_div2 ul li{ font-size:12px; line-height:20px;}
+.inside_city .box_div2 ul li a{color:#555;}
+.inside_city .box_div2 ul li a:hover{ color:#3366cc;}
+.inside_city .box_div3{ display:none;}
+.inside_city .box_div3 ul{ float:left; margin-top:10px; margin-left:8px; width:70px;}
+.inside_city .box_div3 ul li{ font-size:12px; line-height:20px;}
+.inside_city .box_div3 ul li a{color:#555;}
+.inside_city .box_div3 ul li a:hover{ color:#3366cc;}
+.inside_city .box_div4{ display:none;}
+.inside_city .box_div4 ul{ float:left; margin-top:10px; margin-left:8px; width:70px;}
+.inside_city .box_div4 ul li{ font-size:12px; line-height:20px;}
+.inside_city .box_div4 ul li a{color:#555;}
+.inside_city .box_div4 ul li a:hover{ color:#3366cc;}
+.inside_city .box_div5{ display:none;}
+.inside_city .box_div5 ul{ float:left; margin-top:10px; margin-left:8px; width:70px;}
+.inside_city .box_div5 ul li{ font-size:12px; line-height:20px;}
+.inside_city .box_div5 ul li a{color:#555;}
+.inside_city .box_div5 ul li a:hover{ color:#3366cc;}
+.inside_city .box_div6{ display:none;}
+.inside_city .box_div6 ul{ float:left; margin-top:10px; margin-left:8px; width:70px;}
+.inside_city .box_div6 ul li{ font-size:12px; line-height:20px;}
+.inside_city .box_div6 ul li a{color:#555;}
+.inside_city .box_div6 ul li a:hover{ color:#3366cc;}
+.inside_spots{ position:absolute; width:348px; height:260px; border:1px solid #ccc; background:#fff; top:174px; left:757px; display:none; z-index:100;}
+.inside_spots dl{ padding-left:15px; margin-top:8px;border-bottom-width: 1px;
+color: rgba(85, 85, 85,.2); border-bottom-style:solid; padding-bottom:5px;}
+.inside_spots dl dt span{width:18px;height:18px; display:inline-block;  text-align: center; line-height:20px; text-align:center; margin-right:-5px; vertical-align:middle;}
+.inside_spots dl dt .spots_span1{
+	 background:url(../images/icon2015-0.png) -461px -572px; }
+.inside_spots dl dt{ padding:5px 0;font-size:14px;font-weight:bold;color: rgb(85, 85, 85); text-align:left; line-height:20px;}
+.inside_spots dl dd{ font-size:12px; line-height:20px;}
+.inside_spots dl dd ul{ overflow:hidden;}
+.inside_spots dl dd ul li{ float:left; margin-right:5px; line-height:20px;  padding:0 3px 0 3px;}
+.inside_spots dl dd ul li a{color: rgb(85, 85, 85)}
+.inside_spots dl dd ul li:hover{background:rgb(85,136,204);}
+.inside_spots dl dd ul li:hover a{color:#fff;}
+.inside_spots dl dt .spots_span2{ background:url(../images/icon2015-0.png) -507px -573px;}
+.inside_spots dl dt .spots_span3{ background:url(../images/icon2015-0.png) -527px -572px;}
+.banner_ads{ width:1200px; height:100px; background:url(../images/Tokyo_ad1.jpg); margin:15px auto; position:relative; transition-duration:1s;}
+.banner_ads .box_for_a{ position:absolute; top:80px; left:1105px;}
+.banner_ads .box_for_a a{ display:inline-block; width:10px; height:10px; border-radius:50%; background:#fff;}
+.banner_ads .box_for_a a:hover{ background:rgb(204,204,204);}
+.banner_ads .box_for_a a .ads_current{background:rgb(0,102,204);}
+.inter_hot_spots{ width:1200px; margin:0px auto;}
+.inter_hot_spots .hotspots_div1{ margin-top:-20px;}
+.inter_hot_spots .hotspots_div1 .hotspots_p1{  width: 100%;font-size: 30px;font-family: Microsoft Yahei,Tahoma,Geneva,sans-serif;color: #555;text-align: center; height: 120px;line-height: 100px;}
+.inter_hot_spots .hotspots_div1 .hotspots_p2{  width: 100%;font-size: 14px; font-family: Microsoft Yahei,Tahoma,Geneva,sans-serif;color: #999; text-align: center; margin-top: -40px;}
+.inter_hot_spots .hotspots_div2{ margin-top:20px;}
+.inter_hot_spots .hotspots_div2 ul{ overflow:hidden;}
+.inter_hot_spots .hotspots_div2 ul li{ float:left; margin-right:20px; margin-bottom:30px; position:relative; overflow:hidden;}
+.inter_hot_spots .hotspots_div2 ul li.hotspots_div2_li1{ margin-right:0px;}
+.inter_hot_spots .hotspots_div2 ul li a{ width:385px; height:250px; display:inline-block;}
+.hotspots_a1{ background:url(../images/010.jpg);}
+.hotspots_a2{ background:url(../images/053.jpg) no-repeat;}
+.hotspots_a3{ background:url(../images/052.jpg);}
+.hotspots_a4{ background:url(../images/054.jpg);}
+.hotspots_a5{ background:url(../images/051.jpg);}
+.hotspots_a6{ background:url(../images/056.jpg);}
+.inter_hot_spots .hotspots_div2 ul li a div{ margin:15px; color:#fff; font-size:14px; font-family:"微软雅黑"; line-height:30px;}
+.inter_hot_spots .hotspots_div2 ul li a div span{color: rgb(255, 255, 255);
+display:inline-block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 24px;height: auto;line-height: 20px;text-align: left;}
+.hotspots_describe{ width:355px; height:100px; background:rgba(0,0,0,.7); position:absolute; bottom:-70px; left:-15px; padding-left:15px; padding-right:15px; transition-duration:0.3s;}
+.hotspots_describe span{ margin-top:12px; }
+hotspots_describe p{ font-size:14px;}
+.inter_hot_spots .hotspots_div2 ul li a:hover .hotspots_describe{ bottom:-15px; left:-15px;}
+
+
+.yoursearch_browse{ width:1349px; height:108px; background:rgb(238,238,238); display:none;}
+.yoursearch_browse .yoursearch{ width:590px; margin-left:75px; float:left;}
+.yoursearch_browse .yoursearch span{color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 14px;height: 32px;line-height: 32px;}
+.yoursearch_browse .yoursearch ul{ overflow:hidden;}
+.yoursearch_browse .yoursearch ul li{ width:180px; height:65px; float:left; background:url(../images/icons.png) -400px -100px no-repeat; margin-right:25px;}
+.yoursearch_browse .yoursearch ul li a{color: rgb(85, 85, 85);display: block;
+font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 12px;height: 36px;line-height: 20px; background:#fff; height:65px;}
+.yoursearch_browse .yoursearch ul li a div{ margin-top:-65px; margin-left:70px; width:150px; height:36px;}
+.yoursearch_browse .yoursearch ul li a div span{ color:#ff8800; display:inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 12px;}
+.yoursearch_browse .yoursearch ul .yoursearch_browse_li{ margin-right:0px;}
+.yoursearch_browse .yoursearch ul li a:hover{ color:#ff8800;}
+.yoursearch_browse .yourbrowse{ margin-left:20px;}
+.yoursearch_browse .yourbrowse ul li{background:url(../images/icons.png) -400px -100px no-repeat;}
+
+
+.inter_vacation{ width:1349px; background:rgb(245,245,245); height:650px; margin-top:10px; position:relative;/* position:absolute; top:1160px; left:0px;*/ overflow:hidden;}
+.inter_vacation .vacation_divbox{ /*position:absolute; top:0px; left:0px;*/ }v
+.inter_vacation .vacation_div1{ overflow:hidden;}
+.inter_vacation .vacation_div1 span{font-size:30px;text-align: center; margin-top:25px;color: rgb(85, 85, 85);display:block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;}
+.inter_vacation .vacation_div1 ul{ margin-left:410px; overflow:hidden; margin-top:15px;}
+.inter_vacation .vacation_div1 ul li{ float:left; margin-right:56px;}
+.inter_vacation .vacation_div1 ul li a{ display:block; width:61px; height:61px; }
+.inter_vacation .vacation_div1 ul li span{color: rgb(85, 85, 85);font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 12px;line-height: 20px;display:inline; margin-left:8px; bottom:0px; margin-top:-10px;}
+.inter_vacation .vacation_div1 ul li a small{ width:61px; height:61px; display:block; margin-top:0px; height:1px;}
+.inter_vacation .vacation_div1 ul li a.vacation_a1{background:url(../images/icons.png) 0px -300px;}
+.inter_vacation .vacation_div1 ul li a.vacation_a1 small{ background:url(../images/icons.png) -100px -300px;}
+.inter_vacation .vacation_div1 ul li a.vacation_a2{background:url(../images/icons.png) 0px -400px;}
+.inter_vacation .vacation_div1 ul li a.vacation_a2 small{background:url(../images/icons.png) -100px -400px;}
+.inter_vacation .vacation_div1 ul li a.vacation_a3{background:url(../images/icons.png) 0px -500px;}
+.inter_vacation .vacation_div1 ul li a.vacation_a3 small{background:url(../images/icons.png) -100px -500px;}
+.inter_vacation .vacation_div1 ul li a.vacation_a4{background:url(../images/icons.png) 0px -600px;}
+.inter_vacation .vacation_div1 ul li a.vacation_a4 small{background:url(../images/icons.png) -100px -600px;}
+.inter_vacation .vacation_div1 ul li a.vacation_a5{background:url(../images/icons.png) 0px -700px;}
+.inter_vacation .vacation_div1 ul li a.vacation_a5 small{background:url(../images/icons.png) -100px -700px; }
+.inter_vacation .vacation_div1 ul li a.vacation_currenta small{ height:61px;}
+.inter_vacation .vacation_div1 ul li a:hover small{ transition-property:height; transition-duration:0.5s; height:61px;}
+.vacation_div2{ width:1200px; margin:15px auto; position:relative; position:absolute; top:175px; left:75px;}
+.vacation_div2 .vacation_saipan{ width:385px; height:410px; background:#fff;}
+.vacation_div2 .vacation_saipan a{ position:relative; display:block;}
+.vacation_div2 .vacation_saipan a span{ display:block; width:81px; height:81px; border-radius:50%; background:url(../images/icons.png) -200px 0; border:10px #fff solid; position:absolute; top:195px; left:140px;}
+.vacation_div2 .vacation_saipan a p{font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif; font-size:24px; color:#fff; position:absolute;top:5px; left:20px;}
+.vacation_div2 .vacation_saipan a div{color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 18px;height: 120px;line-height: 30px;padding-left: 20px;padding-right: 20px;padding-top:25px;text-align: left;}
+.vacation_div2 .vacation_saipan a img:hover{ opacity:.8;}
+.vacation_phuket_bali{ width:385px; height:414px; position:absolute; top:0px; left:410px;}
+.vacation_phuket_bali .vacation_phuket{ height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing: border-box; }
+.vacation_phuket_bali .vacation_phuket p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_phuket_bali .vacation_phuket p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_phuket_bali .vacation_phuket:hover { border-bottom:1px solid #CCC;}
+.vacation_phuket_bali .vacation_phuket img:hover{ opacity:.8;}
+
+.vacation_phuket_bali .vacation_bali{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing:border-box;}
+.vacation_phuket_bali .vacation_bali p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_phuket_bali .vacation_bali p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_phuket_bali .vacation_bali:hover { border-bottom:1px solid #CCC;}
+.vacation_phuket_bali .vacation_bali img:hover{ opacity:.8;}
+
+.vacation_sumei_hawaii{ width:385px; height:414px; position:absolute; top:-10px; left:805px;}
+.vacation_sumei_hawaii .vacation_sumei{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing:border-box;}
+.vacation_sumei_hawaii .vacation_sumei p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_sumei_hawaii .vacation_sumei p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_sumei_hawaii .vacation_sumei:hover { border-bottom:1px solid #CCC;}
+.vacation_sumei_hawaii .vacation_sumei img:hover{ opacity:.8;}
+
+.vacation_sumei_hawaii .vacation_hawaii{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative; box-sizing:border-box;}
+.vacation_sumei_hawaii .vacation_hawaii p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_sumei_hawaii .vacation_hawaii p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_sumei_hawaii .vacation_hawaii:hover { border-bottom:1px solid #CCC;}
+.vacation_sumei_hawaii .vacation_hawaii img:hover{ opacity:.8;}
+
+
+.vacation_div3{ width:1200px; margin:15px auto; position:relative;/* display:none;*/position:absolute; top:175px; left:1424px;}
+.vacation_div3 .vacation_prague{ width:385px; height:410px; background:#fff;}
+.vacation_div3 .vacation_prague a{ position:relative; display:block;}
+.vacation_div3 .vacation_prague a span{ display:block; width:81px; height:81px; border-radius:50%; background:url(../images/icons.png) -200px -102px; border:10px #fff solid; position:absolute; top:195px; left:140px;}
+.vacation_div3 .vacation_prague a p{font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif; font-size:24px; color:#fff; position:absolute;top:5px; left:20px;}
+.vacation_div3 .vacation_prague a div{color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 18px;height: 120px;line-height: 30px;padding-left: 20px;padding-right: 20px;padding-top:25px;text-align: left;}
+.vacation_div3 .vacation_prague a img:hover{ opacity:.8;}
+.vacation_chiengmai_vienna{ width:385px; height:414px; position:absolute; top:0px; left:410px;}
+.vacation_chiengmai_vienna .vacation_chiengmai{ height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing: border-box; }
+.vacation_chiengmai_vienna .vacation_chiengmai p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_chiengmai_vienna .vacation_chiengmai p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_chiengmai_vienna .vacation_chiengmai:hover { border-bottom:1px solid #CCC;}
+.vacation_chiengmai_vienna .vacation_chiengmai img:hover{ opacity:.8;}
+
+.vacation_chiengmai_vienna .vacation_vienna{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing:border-box;}
+.vacation_chiengmai_vienna .vacation_vienna p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_chiengmai_vienna .vacation_vienna p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_chiengmai_vienna .vacation_vienna:hover { border-bottom:1px solid #CCC;}
+.vacation_chiengmai_vienna .vacation_vienna img:hover{ opacity:.8;}
+
+.vacation_queen_seattle{ width:385px; height:414px; position:absolute; top:-10px; left:805px;}
+.vacation_queen_seattle .vacation_queen{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing:border-box;}
+.vacation_queen_seattle .vacation_queen p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_queen_seattle .vacation_queen p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_queen_seattle .vacation_queen:hover { border-bottom:1px solid #CCC;}
+.vacation_queen_seattle .vacation_queen img:hover{ opacity:.8;}
+
+.vacation_queen_seattle .vacation_seattle{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative; box-sizing:border-box;}
+.vacation_queen_seattle .vacation_seattle p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_queen_seattle .vacation_seattle p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_queen_seattle .vacation_seattle:hover { border-bottom:1px solid #CCC;}
+.vacation_queen_seattle .vacation_seattle img:hover{ opacity:.8;}
+
+
+
+.vacation_div4{ width:1200px; margin:15px auto; position:relative;/* display:none;*/position:absolute; top:175px; left:2773px;}
+.vacation_div4 .vacation_mexico{ width:385px; height:410px; background:#fff;}
+.vacation_div4 .vacation_mexico a{ position:relative; display:block;}
+.vacation_div4 .vacation_mexico a span{ display:block; width:81px; height:81px; border-radius:50%; background:url(../images/icons.png) -200px -200px; border:10px #fff solid; position:absolute; top:195px; left:140px;}
+.vacation_div4 .vacation_mexico a p{font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif; font-size:24px; color:#fff; position:absolute;top:5px; left:20px;}
+.vacation_div4 .vacation_mexico a div{color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 18px;height: 120px;line-height: 30px;padding-left: 20px;padding-right: 20px;padding-top:25px;text-align: left;}
+.vacation_div4 .vacation_mexico a img:hover{ opacity:.8;}
+.vacation_tokyo_paris{ width:385px; height:414px; position:absolute; top:0px; left:410px;}
+.vacation_tokyo_paris .vacation_tokyo{ height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing: border-box; }
+.vacation_tokyo_paris .vacation_tokyo p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_tokyo_paris .vacation_tokyo p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_tokyo_paris .vacation_tokyo:hover { border-bottom:1px solid #CCC;}
+.vacation_tokyo_paris .vacation_tokyo img:hover{ opacity:.8;}
+
+.vacation_tokyo_paris .vacation_paris{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing:border-box;}
+.vacation_tokyo_paris .vacation_paris p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_tokyo_paris .vacation_paris p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_tokyo_paris .vacation_paris:hover { border-bottom:1px solid #CCC;}
+.vacation_tokyo_paris .vacation_paris img:hover{ opacity:.8;}
+
+.vacation_quebec_istanbul{ width:385px; height:414px; position:absolute; top:-10px; left:805px;}
+.vacation_quebec_istanbul .vacation_quebec{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing:border-box;}
+.vacation_quebec_istanbul .vacation_quebec p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_quebec_istanbul .vacation_quebec p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_quebec_istanbul .vacation_quebec:hover { border-bottom:1px solid #CCC;}
+.vacation_quebec_istanbul .vacation_quebec img:hover{ opacity:.8;}
+
+.vacation_quebec_istanbul .vacation_istanbul{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative; box-sizing:border-box;}
+.vacation_quebec_istanbul .vacation_istanbul p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_quebec_istanbul .vacation_istanbul p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_quebec_istanbul .vacation_istanbul:hover { border-bottom:1px solid #CCC;}
+.vacation_quebec_istanbul .vacation_istanbul img:hover{ opacity:.8;}
+
+
+
+.vacation_div5{ width:1200px; margin:15px auto; position:relative; /*display:none;*/position:absolute; top:175px; left:4122px;}
+.vacation_div5 .vacation_milan{ width:385px; height:410px; background:#fff;}
+.vacation_div5 .vacation_milan a{ position:relative; display:block;}
+.vacation_div5 .vacation_milan a span{ display:block; width:81px; height:81px; border-radius:50%; background:url(../images/icons.png) -200px -300px; border:10px #fff solid; position:absolute; top:195px; left:140px;}
+.vacation_div5 .vacation_milan a p{font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif; font-size:24px; color:#fff; position:absolute;top:5px; left:20px;}
+.vacation_div5 .vacation_milan a div{color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 18px;height: 120px;line-height: 30px;padding-left: 20px;padding-right: 20px;padding-top:25px;text-align: left;}
+.vacation_div5 .vacation_milan a img:hover{ opacity:.8;}
+.vacation_sydney_barcelona{ width:385px; height:414px; position:absolute; top:0px; left:410px;}
+.vacation_sydney_barcelona .vacation_sydney{ height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing: border-box; }
+.vacation_sydney_barcelona .vacation_sydney p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_sydney_barcelona .vacation_sydney p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_sydney_barcelona .vacation_sydney:hover { border-bottom:1px solid #CCC;}
+.vacation_sydney_barcelona .vacation_sydney img:hover{ opacity:.8;}
+
+.vacation_sydney_barcelona .vacation_barcelona{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing:border-box;}
+.vacation_sydney_barcelona .vacation_barcelona p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_sydney_barcelona .vacation_barcelona p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_sydney_barcelona .vacation_barcelona:hover { border-bottom:1px solid #CCC;}
+.vacation_sydney_barcelona .vacation_barcelona img:hover{ opacity:.8;}
+
+.vacation_athens_peterburg{ width:385px; height:414px; position:absolute; top:-10px; left:805px;}
+.vacation_athens_peterburg .vacation_athens{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing:border-box;}
+.vacation_athens_peterburg .vacation_athens p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_athens_peterburg .vacation_athens p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_athens_peterburg .vacation_athens:hover { border-bottom:1px solid #CCC;}
+.vacation_athens_peterburg .vacation_athens img:hover{ opacity:.8;}
+
+.vacation_athens_peterburg .vacation_peterburg{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative; box-sizing:border-box;}
+.vacation_athens_peterburg .vacation_peterburg p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_athens_peterburg .vacation_peterburg p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_athens_peterburg .vacation_peterburg:hover { border-bottom:1px solid #CCC;}
+.vacation_athens_peterburg .vacation_peterburg img:hover{ opacity:.8;}
+
+
+
+
+.vacation_div6{ width:1200px; margin:15px auto; position:relative;/*display:none;*/position:absolute; top:175px; left:5471px;}
+.vacation_div6 .vacation_lasvegas{ width:385px; height:410px; background:#fff;}
+.vacation_div6 .vacation_lasvegas a{ position:relative; display:block;}
+.vacation_div6 .vacation_lasvegas a span{ display:block; width:81px; height:81px; border-radius:50%; background:url(../images/icons.png) -200px -300px; border:10px #fff solid; position:absolute; top:195px; left:140px;}
+.vacation_div6 .vacation_lasvegas a p{font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif; font-size:24px; color:#fff; position:absolute;top:5px; left:20px;}
+.vacation_div6 .vacation_lasvegas a div{color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 18px;height: 120px;line-height: 30px;padding-left: 20px;padding-right: 20px;padding-top:25px;text-align: left;}
+.vacation_div6 .vacation_lasvegas a img:hover{ opacity:.8;}
+.vacation_seoul_losangeles{ width:385px; height:414px; position:absolute; top:0px; left:410px;}
+.vacation_seoul_losangeles .vacation_seoul{ height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing: border-box; }
+.vacation_seoul_losangeles .vacation_seoul p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_seoul_losangeles .vacation_seoul p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_seoul_losangeles .vacation_seoul:hover { border-bottom:1px solid #CCC;}
+.vacation_seoul_losangeles .vacation_seoul img:hover{ opacity:.8;}
+
+.vacation_seoul_losangeles .vacation_losangeles{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing:border-box;}
+.vacation_seoul_losangeles .vacation_losangeles p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_seoul_losangeles .vacation_losangeles p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_seoul_losangeles .vacation_losangeles:hover { border-bottom:1px solid #CCC;}
+.vacation_seoul_losangeles .vacation_losangeles img:hover{ opacity:.8;}
+
+.vacation_paris_tokyo{ width:385px; height:414px; position:absolute; top:-10px; left:805px;}
+.vacation_paris_tokyo .vacation_paris{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative;box-sizing:border-box;}
+.vacation_paris_tokyo .vacation_paris p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_paris_tokyo .vacation_paris p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_paris_tokyo .vacation_paris:hover { border-bottom:1px solid #CCC;}
+.vacation_paris_tokyo .vacation_paris img:hover{ opacity:.8;}
+
+.vacation_paris_tokyo .vacation_tokyo{ margin-top:10px; height:200px; width:385px; overflow:hidden; background:#fff; position:relative; box-sizing:border-box;}
+.vacation_paris_tokyo .vacation_tokyo p{ background:#Fff; position:absolute; top:160px; left:0px; padding-left:20px; height:40px; width:385px;color: rgb(19, 19, 19);display: block;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 16px;line-height: 40px;}
+.vacation_paris_tokyo .vacation_tokyo p span{color: rgb(19, 19, 19);display: inline;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;
+font-size: 24px;height: auto;line-height: 24px;}
+.vacation_paris_tokyo .vacation_tokyo:hover { border-bottom:1px solid #CCC;}
+.vacation_paris_tokyo .vacation_tokyo img:hover{ opacity:.8;}
+
+
+.inter_searchhotel{ height:505px; width:1200px; margin:0 auto;}
+.inter_searchhotel .searchhotel_div1{height:120px; text-align:center;color: rgb(153, 153, 153);
+font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 14px; line-height:10px; }
+.inter_searchhotel .searchhotel_div1 p{ margin-top:30px; color: rgb(85, 85, 85);font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size:30px; line-height:60px;}
+.inter_searchhotel .searchhotel_div2{ margin-top:-30px;}
+.inter_searchhotel .searchhotel_div2 ul{ overflow:hidden}
+.inter_searchhotel .searchhotel_div2 ul li{ float:left; margin-right:22px; }
+.inter_searchhotel .searchhotel_div2 ul li:last-child{ margin-right:0px;}
+.inter_searchhotel .searchhotel_div2 ul li a{ display:block; width:385px; height:385px; overflow:hidden; position:relative;}
+.inter_searchhotel .searchhotel_div2 ul li a.hotel_div2_a1{ background:url(../images/island.jpg);}
+.inter_searchhotel .searchhotel_div2 ul li a.hotel_div2_a2{ background:url(../images/hotspring.jpg);}
+.inter_searchhotel .searchhotel_div2 ul li a.hotel_div2_a3{ background:url(../images/movie.jpg);}
+.inter_searchhotel .searchhotel_div2 ul li a .div2_a1_div1{ margin:auto; margin-top:120px; font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 30px; height:50px; width:192px; line-height:50px; background:rgba(0,0,0,.6); border-radius:15px; text-align:center; color:#fff;}
+.inter_searchhotel .searchhotel_div2 ul li a .div2_a1_div2{ height:100px; width:385px; background-color: rgb(22, 159, 255); margin-top:115px; position:relative;}
+a .div2_a1_div2 span{ width:15px; height:8px; background:url(../images/icons.png) -100px -250px; top:-7px; left:40px; position:absolute;	}
+a .div2_a1_div2 small{  width: 12px;height: 11px;background:
+url(../images/icons.png) -100px -200px;position: absolute;top: 20px;left: 20px;}
+.inter_searchhotel .searchhotel_div2 ul li a .div2_a1_div2 div{position:absolute;font-family: 'Microsoft Yahei', Tahoma, Geneva, sans-serif;font-size: 14px; color:#fff; line-height:24px; width:300px; height:70px; top:14px; left:40px;}
+.inter_searchhotel .searchhotel_div2 ul li a strong{ width:385px; height:5px; background:rgb(22, 159, 255); position:absolute; top:0px; left:0px; display:none;}
+.inter_searchhotel .searchhotel_div2 ul li a:hover strong{ display:block;}
+.inter_searchhotel .searchhotel_div2 ul li a:hover .div2_a1_div1{background:rgba(0,0,0,.9)}
+.inter_adver{ margin:0 auto; width:1200px;}
+.inter_adver div{}
+.inter_adver div a{ width:1200px; height:100px; background:url(../images/lt-1200-100.jpg); display:block;}
+
+.inter_shake{ width:1200px; height:120px; margin:30px auto; background:rgb(247,247,247);}
+.inter_shake div{ margin-left:40px; overflow:hidden; float:left;}
+.inter_shake div p.shake_p1{  font-family: Microsoft Yahei,Tahoma,Geneva,sans-serif;font-size: 14px;color: #555;margin-top:-30px; margin-left:85px;}
+.inter_shake div a{font-family: Microsoft Yahei,Tahoma,Geneva,sans-serif;font-size: 18px;color: #4f89cf;margin-top: 30px; display:block; width:360px;  height:65px; margin-top:25px; }
+.inter_shake div a span{ transition-duration:0.1s;}
+.inter_shake .shake_div1 a span{background:url(../images/icons.png); display:block; width:65px; height:65px; border-radius:50%;}
+.inter_shake .shake_div2 a span{ background:url(../images/icons.png) 0 -100px; display:block; width:65px; height:65px;}
+.inter_shake .shake_div3 a span{ background:url(../images/icons.png) 0 -200px;display:block; width:65px; height:65px;}
+.inter_shake a p{ margin-left:85px; margin-top:-65px;}
+
+

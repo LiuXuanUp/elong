@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 a{background:url(../image/el_com.png) -658px 0 no-repeat;}
+.head-shouji{background:url(../image/com_icon_phone.gif) no-repeat;}
+.head-phone{background:url(../image/icon_2015.png) -43px 0 no-repeat;}
+.head-nav li:last-child span{background:url(../image/icon_2015.png) -355px -10px no-repeat;}
+.head-nav .head-nav-li3 div{background:url(../image/icon_2015.png) -208px 0 no-repeat;}
+.head-nav .head-nav-li3 div{background:url(../image/icon_2015.png) -208px 0 no-repeat;}
+.head-shouji div{background:url(../image/icon_2015.png) -208px 0 no-repeat;}
+.head-shouji p{background:url(../image/icon_2015.png) -381px -239px no-repeat;}
+.head-phone{background:url(../image/icon_2015.png) -43px 0 no-repeat;}
+.head-phone strong p{background:url(../image/icon_2015.png) -208px 0 no-repeat;}
+.head-phone .head-phone-ul{background:#fff;}
+.head-nav li .head-nav-ul{background:#fff;}
+.nav-div .nav-firstul .nav-firstul-fourthli div{background:url(../image/el_com.png) -509px 0 no-repeat;}
+
+
+nav{background:#06F;}
+.nav-div{background:#06F;}
+.nav-div .nav-secondul{background:#039;}
+.nav-div .nav-firstul li:hover{background:#03F;}
+.nav-div .nav-firstul .nav-firstul-fourthli div{background:url(../image/el_com.png) -509px 0 no-repeat;}
+.nav-div .nav-firstul .nav-firstul-fifthli div{background:url(../image/el_com.png) -470px -29px no-repeat;}
+.nav-div .nav-firstul .nav-firstul-eighthli div{background:url(../image/el_com.png) -490px 0px no-repeat;}
+.foot .foot-ul li .foot-ul-down{background:url(../image/icon_2015.png) -499px 0 no-repeat;}
+.foot .foot-ul li .foot-ul-weixin{background:url(../image/icon_2015.png) -501px -104px no-repeat;}
+.foot .foot-ul li ul ol a:hover{color:#f00;}
+.foot small span{background:url(../image/el_com.png) -940px -198px no-repeat;}
+.foot-secondul .foot-secondul-li1 a{background:url(../image/el_com.png) -472px -441px no-repeat;}
+.foot-secondul .foot-secondul-li2 a{background:url(../image/el_com.png) -564px -441px no-repeat;}
+.foot-secondul .foot-secondul-li3 a{background:url(../image/el_com.png) -656px -441px no-repeat;}
+.banner .banner-firstul .banner-firstul-li1 a{background:url(../image/20150817_banner1.jpg) center 0 no-repeat;}
+.banner .banner-firstul .banner-firstul-li2 a{background:url(../image/20150826_banner1.jpg) center 0 no-repeat;}
+.banner .banner-firstul .banner-firstul-li3 a{background:url(../image/20150814_banner4.jpg) center 0 no-repeat;}
+.banner .banner-firstul .banner-firstul-li4 a{background:url(../image/20150813_banner4.jpg) center 0 no-repeat;}
+.banner .banner-firstul .banner-firstul-li5 a{background:url(../image/20150811_banner6.jpg) center 0 no-repeat;}
+.banner .banner-firstul .banner-firstul-li6 a{background:url(../image/20150805_banner7.jpg) center 0 no-repeat;}
+.banner .banner-firstul .banner-firstul-li7 a{background:url(../image/20150710_banner6.jpg) center 0 no-repeat;}
+.banner .banner-secondul li{background:#666;}
+.banner-leftul-li1 p{background:url(../image/icon_index.png) -584px -342px no-repeat;}
+.banner-leftul-li2 p{background:url(../image/icon_index.png) -583px -362px no-repeat;}
+.banner-leftul-li3 p{background:url(../image/icon_index.png) -584px -385px no-repeat;}
+.banner-leftul-li4 p{background:url(../image/icon_index.png) -584px -317px no-repeat;}
+.banner-div{background:#fff;}
+.banner-rightdiv4{background:url(../image/mobile_bg.png) 0 0 no-repeat;}
+
+.section-ul .section-ul-li1 a{background:url(../image/20150422_ifold1.jpg) -114px 0 no-repeat;}
+.section-ul .section-ul-li2 a{background:url(../image/20150120_ifold2.jpg) -114px 0 no-repeat;}
+.section-ul .section-ul-li3 a{background:url(../image/20150120_ifold3.jpg) -114px 0 no-repeat;}
+.section-ul .section-ul-li4 a{background:url(../image/20150120_ifold4.jpg) -114px 0 no-repeat;}
+.section-ul .section-ul-li5 a{background:url(../image/20150120_ifold5.jpg) -114px 0 no-repeat;}
+.section-ul .section-ul-li6 a{background:url(../image/20150120_ifold6.jpg) -114px 0 no-repeat;}
+.section-ul .section-ul-li7 a{background:url(../image/20150120_ifold7.jpg) -114px 0 no-repeat; }
+.article-firsth3{background:url(../image/icon_index.png) -576px -100px no-repeat; }
+.article-secondh3{background:url(../image/icon_index.png) -572px -131px no-repeat;}
+.article-seconddiv ul ol{background:#eee;}
+.discount-firstdiv-h3{background:url(../image/icon_index.png) -572px -191px no-repeat;}
+.discount-second-h3{background:url(../image/icon_index.png) -575px -221px no-repeat;}
+.discount-seconddiv li{background:#DCEDF1;}
+.discount-seconddiv li i{background:url(../image/icon_index.png) -569px -171px no-repeat;}
+.discount-seconddiv li .second-i{background:url(../image/icon_index.png) -527px -171px no-repeat;}
+.discount-seconddiv li em{background:#0C3;}
+
+
+.raiders-leftdiv-ul li div{background:url(../image/icon_index.png) -547px -2px no-repeat;}
+.raiders-rightdiv-ul li{background:#eee;}
+
+.service-topdiv{background:#eee;}
+.service-li1 span{background:url(../image/icon_index.png) -91px -4px no-repeat;}
+.service-li2 span{background:url(../image/icon_index.png) -159px -4px no-repeat;}
+.service-li3 span{background:url(../image/icon_index.png) -228px -4px no-repeat;}
+.service-li4 span{background:url(../image/icon_index.png) -295px -6px no-repeat;}
+.service-bottomdiv{background:#eee;}
+.service-bottomdiv form .service-submit{background:#37d;}
+.service-bottomdiv-div{background:url(../image/icon_index.png) -395px -8px no-repeat;}
+.service-bottomdiv:hover .service-bottomdiv-div{background:url(../image/icon_index.png) -370px -8px no-repeat;}
+
+
+
+
+
+
